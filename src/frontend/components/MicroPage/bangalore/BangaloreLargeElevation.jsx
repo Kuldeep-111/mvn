@@ -5,7 +5,7 @@ import frontDesktopImg from "/public/assets/bangalore/images/fr-front1.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomCard from "../../Card";
-import "./BangaloreLargeElevation.css";
+import "./bangalorelargeelevation.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
