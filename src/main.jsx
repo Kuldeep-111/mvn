@@ -34,7 +34,6 @@ import Login from "./admin/Login.jsx";
 import JobApplications from "./admin/JobApplications.jsx";
 
 import ContactQuery from "./admin/ContactQuery.jsx";
-import ContactUs from "./admin/Contactus.jsx";
 import InitialLoading from "./frontend/skeleton/Initial/Index.jsx";
 
 import PageNotFound from "./common/PageNotFound/Index.jsx";
@@ -70,6 +69,7 @@ import "./awaneesh.css";
 
 import "./savan.css";
 import './adarsh.css'
+import ContactUs from "./admin/ContactUs.jsx";
 
 
 const router = createBrowserRouter([
