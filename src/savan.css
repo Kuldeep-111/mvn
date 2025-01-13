@@ -1750,7 +1750,7 @@ section.overview_section {padding-bottom: 25px;}
   width: fit-content;
   height: auto;
   position: relative;
-  top: -70px;
+  top: 5px;
   color: #dbc275;
   text-align: right;
   margin-left: auto;

@@ -133,7 +133,7 @@ const MasterBedroom = ({ isMobile, data, onLoadComplete }) => {
             </div>
           </div>
 
-          <Container>
+          <Container className="mt-5">
             <div className="about">
               <CustomCard className="px_sm_0" title={title} desc={desc} />
             </div>
