@@ -81,8 +81,8 @@ const router = createBrowserRouter([
         path: "",
         element: (
           <FrontendRoute>
-            {/* <Homepage /> */}
-            <MicroPageBangalore1 data={dataBanglore} />
+            <Homepage />
+            {/* <MicroPageBangalore1 data={dataBanglore} /> */}
           </FrontendRoute>
         ), 
       },
