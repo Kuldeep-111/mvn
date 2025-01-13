@@ -131,7 +131,7 @@ export default function MicroLandscape({ landScapeData, title, subTitle, mobCont
                   <AnImage ref={(el) => (imageDivRefs.current[index] = el)}>
                     <img src={image.asset} alt={`mvn landscape ${index}`} onLoad={handleImageLoad}  />
                   </AnImage>
-                  {/* <Watermark className={image.watermark} /> */}
+                  <Watermark className={image.watermark} />
                 </div>
                 <div className="content">
                     <h4 className='title_style1'>{image.title}</h4>

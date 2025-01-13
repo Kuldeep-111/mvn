@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomCard from "../../Card";
 import "./bangalorelargeelevation.css";
+import Watermark from "../../../../common/watermark/Index";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,10 +54,10 @@ export default function LargeElevation() {
         </div>
       </Container>
 
-      <section className="BangaloreElevation pb-0" ref={elevationRef}>
-        <div className="BangaloreMainTitle">
+      <section className="BangaloreElevation " ref={elevationRef}>
+        {/* <div className="BangaloreMainTitle">
           <h1 className="Title">Timeless Fusion of Elegance</h1>
-        </div>
+        </div> */}
         <div className="BangaloreImgs">
           <img
             src={frontDesktopImg}
@@ -64,13 +65,15 @@ export default function LargeElevation() {
             className="BangaloreFrontImg"
             ref={imgRef}
           />
-          <p className="WaterMark2">Artistic Impression</p>
-          <img src="/public/assets/images/logo.png" alt="logo"  className="WaterMark"/>
+          <Watermark/>
+          {/* <p className="WaterMark2">Artistic Impression</p>
+          <img src="/public/assets/images/logo.png" alt="logo"  className="WaterMark"/> */}
         </div>
         <Container>
           <div className="about">
             <CustomCard
               className="px-0"
+              title="Timeless Fusion of Elegance"
               desc="Designed to inspire awe at first glance, the static elevation of MVN Aero One showcases
               a perfect fusion of form and function. Each detail is meticulously crafted to embody a harmonious balance
               of contemporary aesthetics and architectural innovation."

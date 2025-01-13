@@ -19,7 +19,7 @@ color: #131313;text-decoration: none;font-family: "Tinos-Regular";font-size: 18p
 .typology_section .carousel-inner .carousel-caption span{font-family: "Roboto-light";color: #fff;border-top: 1px solid #fff;border-bottom: 1px solid #fff;font-size: 18px;padding: 10px 0px;letter-spacing: 2px;}
 .typology_section .carousel-inner .carousel-caption .link{padding-top: 20px;}
 .typology_section .carousel-inner .carousel-caption .link a{font-family: "Roboto-light";color: #fff;}
-.typology_section .carousel-item_in{display: flex; flex-direction: row-reverse; justify-content: center; align-items: center; padding: 50px 0; gap: 0 110px; min-height: 546px;}
+.typology_section .carousel-item_in{display: flex; flex-direction: row-reverse; justify-content: center; align-items: center; padding-bottom: 10px; gap: 0 110px; min-height: 445px;}
 
 /* .typology_section .arrow {position: absolute;width: 120px;right: 0%;height: 50px;display: flex;z-index: 9;bottom: 63%;} */
 .typology_section .arrowContainer {position: absolute;width: 120px;left: 0; right: 0; bottom: -15px; margin: 0 auto;}
@@ -65,15 +65,15 @@ color: #131313;text-decoration: none;font-family: "Tinos-Regular";font-size: 18p
     color: #d9c072;
     border-radius: 50%;
     border: 1px solid #d9c072;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 11;
 }
 .typology_section .swiper-button-prev:after,.typology_section .swiper-button-next:after{
-    font-size: 23px;
+    font-size: 13px;
 }
 @media (max-width: 1100px) {
     .typology_section .swiper-button-prev{

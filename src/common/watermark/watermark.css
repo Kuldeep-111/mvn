@@ -24,3 +24,18 @@
 
   }
 }
+.WaterMarkContainer{
+  position:absolute;
+  display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+  bottom: 0;
+  z-index: 1;
+  color: #fff;
+  font-size: 11px; 
+}
+.WaterMarkContainer .Watermark_logo img{
+  width: 50px;
+}

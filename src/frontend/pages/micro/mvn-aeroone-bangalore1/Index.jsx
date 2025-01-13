@@ -491,131 +491,139 @@ export const dataBanglore = {
     bhk1: [
       {
         title: "1 BHK",
-        area: "440 SQFT",
+        area: "440 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/1bhk/1.png`
       },
       {
         title: "1 BHK",
-        area: "600 SQFT",
+        area: "600 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/1bhk/2.png`
       },
     ],
     bhk2: [
       {
         title: "2 BHK",
-        area: "Area:725 SQFT",
+        area: "Area:725 sqft",
         link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/1.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 SQFT",
+        area: "Area:725 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/2.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 SQFT",
+        area: "Area:725 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/3.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 SQFT",
+        area: "Area:725 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/4.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 SQFT",
+        area: "Area:725 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/5.png`
       },
       {
         title: "2 BHK",
-        area: "Area:726 SQFT",
+        area: "Area:726 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/6.png`
       },
       {
         title: "2 BHK",
-        area: "Area:726 SQFT",
+        area: "Area:726 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/7.png`
       },
       {
         title: "2 BHK",
-        area: "Area:730 SQFT",
+        area: "Area:730 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/8.png`
       },
       {
         title: "2 BHK",
-        area: "Area:730 SQFT",
+        area: "Area:730 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/9.png`
       },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:755 SQFT",
-      //   link: "#",
-      // },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:804 SQFT",
-      //   link: "#",
-      // },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:804 SQFT",
-      //   link: "#",
-      // },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:807 SQFT",
-      //   link: "#",
-      // },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:807 SQFT",
-      //   link: "#",
-      // },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:834 SQFT",
-      //   link: "#",
-      // },
-      // {
-      //   title: "2 BHK",
-      //   area: "Area:834 SQFT",
-      //   link: "#",
-      // },
+      {
+        title: "2 BHK",
+        area: "Area:755 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/10.png`
+      },
+      {
+        title: "2 BHK",
+        area: "Area:804 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/11.png`
+      },
+      {
+        title: "2 BHK",
+        area: "Area:804 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/12.png`
+      },
+      {
+        title: "2 BHK",
+        area: "Area:807 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/13.png`
+      },
+      {
+        title: "2 BHK",
+        area: "Area:807 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/14.png`
+      },
+      {
+        title: "2 BHK",
+        area: "Area:834 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/15.png`
+      },
+      {
+        title: "2 BHK",
+        area: "Area:834 sqft",
+        link: "#",
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/16.png`
+      },
     ],
     bhk3: [
       {
         title: "3 BHK",
-        area: "Area:1099 SQFT",
+        area: "Area:1099 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/1.png`
       },
       {
         title: "3 BHK",
-        area: "Area:1099 SQFT",
+        area: "Area:1099 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/2.png`
       },
       {
         title: "3 BHK",
-        area: "Area:1099 SQFT",
+        area: "Area:1099 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/3.png`
       },
       {
         title: "3 BHK",
-        area: "Area:1099 SQFT",
+        area: "Area:1099 sqft",
         link: "#",
-        imgSrc: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1bhk1.png`,
+        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/4.png`
       },
     ],
   },

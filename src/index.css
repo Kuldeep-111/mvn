@@ -5184,3 +5184,31 @@ footer {
   .media-event-content a {display: block;}
 
 }
+
+
+
+/* style for watermark on images start*/
+
+.watermark_artistic{
+  position: absolute;
+    left: 10px;
+    bottom: 5px;
+    z-index: 1;
+    color: #fff;
+    font-size: 11px;
+}
+.watermark_logo{
+  position: absolute;
+    right: 10px;
+    bottom: 5px;
+    z-index: 1;
+    color: #fff;
+    font-size: 11px;
+}
+/* style for watermark on images end */
+
+@media (min-width: 767px) {
+  section.walkthrough_section.new_height iframe {
+    height: 500px !important;
+  }
+}

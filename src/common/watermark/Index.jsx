@@ -1,9 +1,16 @@
 import React from "react";
-import './watermark.css'
+import './watermark.css';
+import * as CONFIG from '../../config/config';
 
-const Watermark = ({className})=>{
+
+const Watermark = ()=>{
   return(
-    <small className={`watermark ${className}`}>Artistic Impression</small>
+    <div className="WaterMarkContainer">
+    <div className="Watermark_artistic">Artistic Impression</div>
+    
+    <div className="Watermark_logo"><img src={`${CONFIG.IMAGE_URL}logo.png`} alt="logo" /></div>
+
+    </div>
   )
 }
 

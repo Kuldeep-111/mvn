@@ -12,41 +12,6 @@ const BangaloreTypology = ({ data }) => {
   const [slides3, setSlides3] = useState([]);
   const { bhk1, bhk2, bhk3 } = data;
 
-  useEffect(() => {
-    // Function to generate image paths dynamically
-    const getImagePaths = () => {
-      const imagePaths = [];
-      const rooms = ["1bhk", "2bhk", "3bhk"];
-
-      rooms.forEach((room) => {
-        for (let i = 1; i <= 5; i++) { // Adjust based on the number of images in each folder
-          const path = `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/${room}/${i}.png`; // Example path
-          imagePaths.push(path);
-        }
-      });
-
-      return imagePaths;
-    };
-
-    const imagePaths = getImagePaths();
-
-    // Create an array for all BHK states
-    const bhkArray = [bhk1, bhk2, bhk3];
-    const slidesArray = [setSlides1, setSlides2, setSlides3];
-
-    // Loop through bhkArray and slidesArray to set the state dynamically
-    bhkArray.forEach((bhkData, index) => {
-      const imageSlides = imagePaths.map((imagePath, i) => ({
-        image: imagePath, // Image path
-        title: bhkData[i]?.title || "Default Title", // Use corresponding metadata
-        area: bhkData[i]?.area || "Default Area", // Use corresponding metadata
-        link: bhkData[i]?.link || "#", // Use corresponding metadata
-      }));
-
-      // Dynamically call the correct setSlides function
-      slidesArray[index](imageSlides);
-    });
-  }, [bhk1, bhk2, bhk3]);
 
   return (
     <section className="section typology_section">
@@ -105,7 +70,7 @@ const BangaloreTypology = ({ data }) => {
             role="tabpanel"
             aria-labelledby="typo1-tab"
           >
-            <CustomSlider slides={slides1} />
+            <CustomSlider slides={bhk1} />
           </div>
           <div
             className="tab-pane fade"
@@ -113,7 +78,7 @@ const BangaloreTypology = ({ data }) => {
             role="tabpanel"
             aria-labelledby="typo2-tab"
           >
-            <CustomSlider slides={slides2} />
+            <CustomSlider slides={bhk2} />
           </div>
           <div
             className="tab-pane fade"
@@ -121,7 +86,7 @@ const BangaloreTypology = ({ data }) => {
             role="tabpanel"
             aria-labelledby="typo3-tab"
           >
-            <CustomSlider slides={slides3} />
+            <CustomSlider slides={bhk3} />
           </div>
         </div>
       </Container>

@@ -8,7 +8,7 @@ const Walkthrough = ({data})=>{
   
 
   return(
-    <section className="section walkthrough_section">
+    <section className="section walkthrough_section new_height">
     {/* <iframe
         src="https://www.youtube.com/embed/PhkCdCg9k4k?autoplay=1&loop=1&playlist=PhkCdCg9k4k&mute=1"
         title="YouTube video player"
@@ -17,7 +17,7 @@ const Walkthrough = ({data})=>{
         allowFullScreen
        // Adjust size as needed
       ></iframe> */}
-     {src && <iframe src={src} title="YouTube video player" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="100" height="100"></iframe>}
+     {src && <iframe src={src} title="YouTube video player" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen width="100" height="70"></iframe>}
       
    
       <Container>

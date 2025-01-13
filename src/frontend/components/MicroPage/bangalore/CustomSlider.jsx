@@ -27,7 +27,7 @@ const Slider = ({slides}) => {
               <div className="carousel-item_in">
                 <img
                   data-speed="clamp(0.9)"
-                  src={slide.image}
+                  src={slide.src}
                   alt={`Slide ${index + 1}`}
                 />
                 <div className="carousel-caption">
