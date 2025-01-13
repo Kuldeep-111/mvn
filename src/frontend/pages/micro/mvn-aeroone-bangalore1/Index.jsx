@@ -319,6 +319,7 @@ export const dataBanglore = {
     },
   ],
   amenities: {
+    bangalore_amenities:true,
     content: {
       desc: "Indulge in a range of world-class amenities tailored to meet your every desire. From wellness and leisure to relaxation and convenience, MVN Aero One offers a lifestyle perfectly aligned with your aspirations. ",
     },
@@ -326,56 +327,56 @@ export const dataBanglore = {
       {
         name: "Hot Tub",
         imgSrc: {
-          desktop: "bangalore/Hot-tub--Hires.jpg",
-          mobile: "bangalore/Hot-tub--Hires-sm.jpg",
+          desktop: "Hot-tub--Hires.jpg",
+          mobile: "Hot-tub--Hires-sm.jpg",
         },
         desc: "Immerse yourself in ultimate relaxation with a luxurious hot tub. Bask in the warmth as you de-stress and let go of the world’s cares, rejuvenating your mind and body.",
       },
       {
         name: "Biiliards",
         imgSrc: {
-          desktop: "bangalore/Biiliards.jpg",
-          mobile: "bangalore/Biiliards-sm.jpg",
+          desktop: "Biiliards.jpg",
+          mobile: "Biiliards-sm.jpg",
         },
         desc: "Engage in a refined game of billiards with friends and neighbors. The well-appointed space ensures a seamless and enjoyable experience for every enthusiast.",
       },
       {
         name: "Gym",
         imgSrc: {
-          desktop: "bangalore/gym.jpg",
-          mobile: "bangalore/gym-sm.jpg",
+          desktop: "gym.jpg",
+          mobile: "gym-sm.jpg",
         },
         desc: "Achieve your fitness goals with cutting-edge equipment in a panoramic terrace gym, where every session is infused with motivation and stunning views.",
       },
       {
         name: "Party Lawn",
         imgSrc: {
-          desktop: "bangalore/Party-Lawn.jpg",
-          mobile: "bangalore/Party-Lawn-sm.jpg",
+          desktop: "Party-Lawn.jpg",
+          mobile: "Party-Lawn-sm.jpg",
         },
         desc: "Celebrate life’s cherished moments on the rooftop party lawn, a haven for heartfelt conversations and unforgettable memories. ",
       },
       {
         name: `Infinity Pool`,
         imgSrc: {
-          desktop: "bangalore/Infinity-pool.jpg",
-          mobile: "bangalore/Infinity-pool-sm.jpg",
+          desktop: "Infinity-pool.jpg",
+          mobile: "Infinity-pool-sm.jpg",
         },
         desc: "Swim towards the horizon in the exquisite infinity pool. With its vanishing edge, enjoy breathtaking vistas of the runway, lush greenery, and the shimmering Bettakotta Lake.",
       },
       {
         name: "Table-Tennis",
         imgSrc: {
-          desktop: "bangalore/Table-Tennis.jpg",
-          mobile: "bangalore/Table-Tennis-sm.jpg",
+          desktop: "Table-Tennis.jpg",
+          mobile: "Table-Tennis-sm.jpg",
         },
         desc: "Refine your game in the dedicated table tennis zone. This vibrant space is designed to inspire focus and friendly competition, ensuring endless enjoyment.",
       },
       {
         name: "Outdoor Cinema",
         imgSrc: {
-          desktop: "bangalore/Outdoor-Cinema.jpg",
-          mobile: "bangalore/Outdoor-Cinema-sm.jpg",
+          desktop: "Outdoor-Cinema.jpg",
+          mobile: "Outdoor-Cinema-sm.jpg",
         },
         desc: "Experience the enchantment of cinema beneath a canopy of stars. The outdoor theatre offers an exceptional blend of entertainment and natural splendor.",
       },

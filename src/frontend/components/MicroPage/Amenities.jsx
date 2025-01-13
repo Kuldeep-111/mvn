@@ -36,7 +36,7 @@ const amenityData = [
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Amenities({ amenitiesData }) {
-  const {content , data} = amenitiesData;
+  const {content , data ,bangalore_amenities} = amenitiesData;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const sectionsRef = useRef([]);
   const triggers = useRef([]);
@@ -59,7 +59,7 @@ export default function Amenities({ amenitiesData }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Set up GSAP ScrollTrigger for desktop view
+  // Set up GSAP ScrollTrigger for desktop view 
   useEffect(() => {
     if (!isMobile) {
       const getRatio = (el) => window.innerHeight / (window.innerHeight + el.offsetHeight);
@@ -68,7 +68,10 @@ export default function Amenities({ amenitiesData }) {
       sectionsRef.current.forEach((section, i) => {
         const bg = section.querySelector(".bg");
         if (bg) {
-          const imageUrl = `url(${CONFIG.IMAGE_URL}amenities/${data[i].imgSrc.desktop})`;
+          let imageUrl 
+          bangalore_amenities ?
+          imageUrl = `url(${CONFIG.IMAGE_URL_BANGALORE}images/amenities/${data[i].imgSrc.desktop})`
+          : imageUrl = `url(${CONFIG.IMAGE_URL}amenities/${data[i].imgSrc.desktop})`;
           bg.style.backgroundImage = imageUrl;
   
           const defaultBgPos = i === 0 ? "50% 0" : `50% ${-window.innerHeight * getRatio(section)}px`;
