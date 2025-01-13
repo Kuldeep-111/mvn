@@ -10,9 +10,10 @@
     padding: 10px 10px;
     padding-top: 20px;
     min-height: 385px;
+    width: 100%;
 }
 .LocationSlider .swiper{
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 /* .LocationSlider .swiper-button-prev.swiper-button-lock,.LocationSlider .swiper-button-next.swiper-button-lock{
     display: block;

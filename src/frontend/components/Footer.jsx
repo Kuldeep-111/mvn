@@ -25,17 +25,17 @@ const Footer = () => {
       </LazyLoad> */}
 
       <Container >
-        <div class="footer-mid">
-          <div class="inner-mid">
-            <div class="center">
-              <div class="f-logo reveal">
+        <div className="footer-mid">
+          <div className="inner-mid">
+            <div className="center">
+              <div className="f-logo reveal">
                 <img src={CONFIG.IMAGE_URL + 'logo_white.webp'} width="100%" alt="mvn logo" />
               </div>
             </div>
 
-            <div class="right">
-              <div class="links">
-                <div class="box">
+            <div className="right">
+              <div className="links">
+                <div className="box">
                   <h4>Projects</h4>
                   <ul>
                     <li>
@@ -95,18 +95,18 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="left">
+            <div className="left">
               <h4>Contact Details</h4>
 
-              <p class="address-details"><span>Meet:</span> MVN Group, 2nd Floor, Above McDonald's, Jansons Mall, Downtown Park II, Menakunte, Sadahalli Gate, Bangalore - 562157 
+              <p className="address-details"><span>Meet:</span> MVN Group, 2nd Floor, Above McDonald's, Jansons Mall, Downtown Park II, Menakunte, Sadahalli Gate, Bangalore - 562157 
               <br /> CIN:ACA-4678 | PAN:ABWFM8415E</p>
-              <p class="phone-details"><span>Talk:</span> +91 799 6000 196</p>
-              <p class="mail-details"><span>Write:</span> info@mvn.in</p>
+              <p className="phone-details"><span>Talk:</span> +91 799 6000 196</p>
+              <p className="mail-details"><span>Write:</span> info@mvn.in</p>
 
-              <div class="footer-top">
-                <div class="social-media">
-                  <div class="left-b">
-                    <div class="icons">
+              <div className="footer-top">
+                <div className="social-media">
+                  <div className="left-b">
+                    <div className="icons">
                       <ul>
                         <li>
                           <Link to="https://www.linkedin.com/company/mvn-infrastructure/" target="_blank" className="icon">
@@ -132,8 +132,8 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div class="right-b">
-                    <div class="box">
+                  <div className="right-b">
+                    <div className="box">
                       <span>
                         <img src={subscribeBtn} alt="subscribe_btn" className="subscribe_btn" onClick={() => window.open(channelUrl, "_blank")} />
                       </span>
@@ -145,9 +145,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <div class="box-b">
-            <div class="left">
+        <div className="footer-bottom">
+          <div className="box-b">
+            <div className="left">
               <ul>
                 <li>
                   <NavLink to={`${import.meta.env.VITE_APP_URL}privacy-policy`}>Privacy Policy</NavLink>
@@ -158,10 +158,10 @@ const Footer = () => {
                 </li>
             </ul>
             </div>
-            <div class="right">
+            <div className="right">
               <ul>
                 <li>
-                  <p class="main-pera">© Copyright 2024 - MVN Group. All Right Reserved. |
+                  <p className="main-pera">© Copyright 2024 - MVN Group. All Right Reserved. |
                   <Link to="http://gtftechnologies.com/" target="_blank">Curated by: GTF Technologies</Link></p>
                 </li>
               </ul>

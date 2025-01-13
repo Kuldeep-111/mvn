@@ -53,9 +53,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   const sectionRefs = useRef({});
 
 
-  console.log(apartmentLoaded,"apartmentLoaded");
-
-
+  
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
