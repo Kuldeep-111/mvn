@@ -45,6 +45,7 @@ const MasterBedroom = ({ isMobile, data, onLoadComplete }) => {
         // Import the correct JSON file using the static mapping
         const importedData = await jsonImports[key]();
         setAnimationData(importedData.default);
+        onLoadComplete();
       } catch (error) {
         console.error("Error loading animation data:", error);
       }

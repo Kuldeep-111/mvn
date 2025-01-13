@@ -15,12 +15,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-export default function MicroApartment({ apartmentData }) {
+export default function MicroApartment({ apartmentData ,onLoadComplete}) {
   
   const images = [...apartmentData.images];
   const contents = apartmentData.content;
   const sectionsRef = useRef([]);
   const [index, setIndex] = useState(-1);
+  useEffect(() => {
+    // Check if the required data is loaded
+    if (images.length > 0 && contents) {
+      onLoadComplete && onLoadComplete(); // Call the function if defined
+    }
+  }, [images, contents, onLoadComplete]); // Dependencies ensure this runs when data changes
+
 
   return (
     <div className="section renders1_section wrapper center pb-0 Apartment-section">

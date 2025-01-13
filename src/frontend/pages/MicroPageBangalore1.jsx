@@ -53,6 +53,9 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   const sectionRefs = useRef({});
 
 
+  console.log(apartmentLoaded,"apartmentLoaded");
+
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -87,7 +90,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   }, [heroLoaded]);
 
   useEffect(() => {
-    if (newLoadingCount >= 100 && heroLoaded  && livingRoomLoaded ) {
+    if (newLoadingCount >= 100 && heroLoaded  && livingRoomLoaded && masterBedroomLoaded && apartmentLoaded) {
       const timer = setTimeout(() => {
         setNewLoadingCount(101);
         setIsPageLoaded(true); // Mark page as loaded
@@ -100,7 +103,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   return (
     <>
     {/*    */}
-      {(!heroLoaded || !livingRoomLoaded ) && (
+      {(!heroLoaded || !livingRoomLoaded || !masterBedroomLoaded || !apartmentLoaded) && (
         <>
           <InitialLoading
             fast="false"
