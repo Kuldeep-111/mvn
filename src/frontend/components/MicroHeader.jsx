@@ -47,7 +47,7 @@ const MicroHeader = ({ scrollToSection }) => {
   }, [])
 
   useEffect(() => {
-    if (pathname.includes("aeroone-gurgaon") || pathname.includes("aeroone-bangalore1")) {
+    if (pathname.includes("aeroone-gurgaon") || pathname.includes("/")) {
       setIsMicro(true);
     }
 
