@@ -132,7 +132,7 @@ export const dataBanglore = {
   },
   elevation: {
     content: {
-      desc: "A landmark rising majestically above the city, MVN Aero One Bangalore embodies architectural excellence. Its striking facade signifies a commitment to superior living and luxurious distinction.",
+      desc: "A landmark rising majestically above the city, MVN Aero One embodies architectural excellence. Its striking facade signifies a commitment to superior living and luxurious distinction.",
     },
     images: [
       {
@@ -333,7 +333,7 @@ export const dataBanglore = {
         desc: "Immerse yourself in ultimate relaxation with a luxurious hot tub. Bask in the warmth as you de-stress and let go of the world’s cares, rejuvenating your mind and body.",
       },
       {
-        name: "Biiliards",
+        name: "Billiards",
         imgSrc: {
           desktop: "Biiliards.jpg",
           mobile: "Biiliards-sm.jpg",
