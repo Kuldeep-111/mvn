@@ -78,11 +78,11 @@ const router = createBrowserRouter([
     // element:<Layout />,
     children: [
       {
-        path: "/home",
+        path: "",
         element: (
           <FrontendRoute>
-            <Homepage />
-            {/* <MicroPageBangalore1 data={dataBanglore} /> */}
+            {/* <Homepage /> */}
+            <MicroPageBangalore1 data={dataBanglore} />
           </FrontendRoute>
         ), 
       },
@@ -103,7 +103,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/",
+        path: "aeroone-bangalore1",
         element: (
           <FrontendRoute >
             <MicroPageBangalore1 data={dataBanglore} />
