@@ -28,7 +28,7 @@ export default function MicroApartment({ apartmentData ,onLoadComplete}) {
     }
   }, [images, contents, onLoadComplete]); // Dependencies ensure this runs when data changes
 
-
+const lightbox_watermark = "lightbox_watermark";
   return (
     <div className="section renders1_section wrapper center pb-0 Apartment-section">
       
@@ -76,6 +76,18 @@ export default function MicroApartment({ apartmentData ,onLoadComplete}) {
           open={index >= 0}
           close={() => setIndex(-1)}
           plugins={[Fullscreen, Zoom]}
+          render={{
+            slide: ({ slide }) => (
+              <div className='Img_Container'>
+                <img
+                  src={slide.src}
+                  alt="landscape image"
+                  className='LightBox_image'
+                />
+                <Watermark className={lightbox_watermark}/>
+                </div>
+            ),
+          }}
         />
 
     </div>

@@ -31,6 +31,7 @@ import NoPolutionZone from "../components/MicroPage/NoPolutionZone";
 import * as CONFIG from '../../config/config';
 import BangaloreLargeElevation from "../components/MicroPage/bangalore/BangaloreLargeElevation";
 import BangaloreTypology from "../components/MicroPage/bangalore/BangaloreTypology";
+import BangaloreMasterBedroom from "../components/MicroPage/bangalore/BangaloreMasterBedroom"
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -241,7 +242,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
             />
           </div>
           <div>
-            <MasterBedroom
+            <BangaloreMasterBedroom
               data={data}
               isMobile={isMobile}
               onLoadComplete={() =>
@@ -249,6 +250,11 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
               }
             />
           </div>
+          {/* <BangaloreMasterBedroom
+          
+          data={data}
+          isMobile={isMobile}
+          /> */}
           <div
             ref={(el) =>
               (sectionRefs.current.Walkthrough = el)
