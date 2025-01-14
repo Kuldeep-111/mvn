@@ -37,7 +37,7 @@
   font-size: 11px; 
 }
 .WaterMarkContainer .Watermark_logo img{
-  width: 50px;
+  width: 50px !important;
 }
 .WaterMarkContainer.lightbox_watermark{
   padding: 5px 20px;
