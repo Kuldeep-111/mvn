@@ -319,7 +319,7 @@ export const dataBanglore = {
     },
   ],
   amenities: {
-    bangalore_amenities:true,
+    bangalore_amenities:"bangalore_amenities",
     content: {
       desc: "Indulge in a range of world-class amenities tailored to meet your every desire. From wellness and leisure to relaxation and convenience, MVN Aero One offers a lifestyle perfectly aligned with your aspirations. ",
     },

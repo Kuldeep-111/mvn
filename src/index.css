@@ -5212,3 +5212,12 @@ footer {
     height: 500px !important;
   }
 }
+
+/* bangalore amenities style start */
+.main_am.bangalore_amenities .parallax .content{
+  top: unset;
+  bottom: 10%;
+  height: fit-content;
+}
+
+/* bangalore amenities style end */

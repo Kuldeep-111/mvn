@@ -12,9 +12,9 @@
     min-height: 385px;
     width: 100%;
 }
-.LocationSlider .swiper{
+/* .LocationSlider .swiper{
     padding-bottom: 50px;
-}
+} */
 /* .LocationSlider .swiper-button-prev.swiper-button-lock,.LocationSlider .swiper-button-next.swiper-button-lock{
     display: block;
 } */
@@ -65,7 +65,7 @@
 }
 
 
-.LocationSlider .swiper-button-prev{
+/* .LocationSlider .swiper-button-prev{
     left: 45%;
 }
 .LocationSlider .swiper-button-next{
@@ -94,4 +94,4 @@
     .LocationSlider .swiper-button-next{
         right: 30%;
     }
-  }
+  } */

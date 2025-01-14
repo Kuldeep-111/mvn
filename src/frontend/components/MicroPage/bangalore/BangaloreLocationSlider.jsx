@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules'; // Import Navigation module
+// import { Navigation } from 'swiper/modules'; 
 import './LocationSlider.css'
 import { Container } from 'react-bootstrap';
 import * as CONFIG from "../../../../config/config";
@@ -46,8 +46,8 @@ const BangaloreLocationSlider = () => {
     <Swiper
       spaceBetween={20}
       loop={true}
-      navigation={true}
-      modules={[Navigation]}
+      // navigation={true}
+      // modules={[Navigation]}
       breakpoints={{
         640: {
           slidesPerView: 1,

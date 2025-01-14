@@ -111,6 +111,7 @@ export default function MicroLandscape({ landScapeData, title, subTitle, mobCont
   const handleImageLoad = () => {
     setImagesLoaded((prev) => prev + 1);
   };
+  const lightbox_watermark = "lightbox_watermark";
 
   return (
     <div className="section renders1_section wrapper center pb-0 Landscape-section">
@@ -158,7 +159,20 @@ export default function MicroLandscape({ landScapeData, title, subTitle, mobCont
         open={index >= 0}
         close={() => setIndex(-1)}
         plugins={[Fullscreen, Zoom]}
+        render={{
+          slide: ({ slide }) => (
+            <div className='Img_Container'>
+              <img
+                src={slide.src}
+                alt="landscape image"
+                className='LightBox_image'
+              />
+              <Watermark className={lightbox_watermark}/>
+              </div>
+          ),
+        }}
       />
+
     </div>
   );
 }

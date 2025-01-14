@@ -74,6 +74,7 @@ export default function MicroElevation({ elevationData, onLoadComplete }) {
     setImagesLoaded((prev) => prev + 1);
   };
 
+  const lightbox_watermark = "lightbox_watermark";
   return (
     <div className="section renders1_section wrapper center pb-0">
 {/* <div className="sec_title text-center color style1 mt_50">
@@ -116,6 +117,19 @@ export default function MicroElevation({ elevationData, onLoadComplete }) {
   open={index >= 0}
   close={() => setIndex(-1)}
   plugins={[Fullscreen, Zoom]}
+  render={{
+    slide: ({ slide }) => (
+      <div className='Img_Container'>
+        <img
+          src={slide.src}
+          alt="landscape image"
+          className='LightBox_image'
+        />
+        <Watermark className={lightbox_watermark}/>
+        </div>
+    ),
+  }}
+
 />
 </div>
   );
