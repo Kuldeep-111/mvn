@@ -25,9 +25,9 @@ const MasterBedroom = ({ isMobile, data, onLoadComplete }) => {
     "gurugram/Desktop": () =>
       import("../../../../public/assets/json-frame/aeroone-gurgaon1/Panther/Desktop/data.json"),
     "bangalore/Mobile": () =>
-      import("../../../../public/assets/bangalore/images/master_bedroom/mobile/data.json"),
+      import("../../../../public/assets/json-frame/aeroone-gurgaon1/Panther/Mobile/data.json"),
     "bangalore/Desktop": () =>
-      import("../../../../public/assets/bangalore/images/master_bedroom/desktop/data.json"),
+      import("../../../../public/assets/json-frame/aeroone-gurgaon1/Panther/Desktop/data.json"),
   };
   
 

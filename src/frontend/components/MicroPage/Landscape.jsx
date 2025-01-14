@@ -100,7 +100,6 @@ export default function MicroLandscape({ landScapeData, title, subTitle, mobCont
       setTimeout(() => {
         initializeAnimations();
         // ScrollTrigger.refresh();
-        onLoadComplete(); 
       }, 300);
     }
 

@@ -32,11 +32,7 @@ const MicroHero = ({ data, onLoadComplete }) => {
     if (data.micro_hero_section.client) {
       if (data.micro_hero_section.bangaloreFrames) {
         // Check if it's mobile
-        if (isMobile) {
           frameCount = import.meta.glob('/public/assets/bangalore/images/banner/desktop/*.webp');
-        } else {
-          frameCount = import.meta.glob('/public/assets/bangalore/images/banner/desktop/*.webp');
-        }
       } else {
         // If it's not bangaloreFrames
         if (isMobile) {

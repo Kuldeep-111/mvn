@@ -39,25 +39,25 @@ const Footer = () => {
                   <h4>Projects</h4>
                   <ul>
                     <li>
-                      <label for="">Gurgaon</label>
+                      <label htmlFor="">Gurgaon</label>
                       <NavLink to='https://mvnmall.com/' target="_blank">MVN Mall</NavLink>
                     </li>
                     <li>
                       <NavLink to={`${import.meta.env.VITE_APP_URL}aeroone-gurgaon`}>MVN Aero One</NavLink>
                     </li>
                     <li>
-                      <label for="">Bangalore</label>
+                      <label htmlFor="">Bangalore</label>
                       <NavLink to="https://www.mvnaeroone.com/" target="_blank">MVN</NavLink>
                     </li>
                     <li>
-                      <label for="">Sohna</label>
+                      <label htmlFor="">Sohna</label>
                       <NavLink to="https://www.mvn.in/athens-gurugram/" target="_blank">MVN Athens</NavLink>
                     </li>
                     <li>
                       <NavLink to="https://www.mvninfrastructure.com/athens-gurugram-phase2/" target="_blank">MVN Athens PH-2</NavLink>
                     </li>
                     <li>
-                      <label for="">Faridabad</label>
+                      <label htmlFor="">Faridabad</label>
                       <NavLink to="https://www.mvn.in/athens-faridabad/" target="_blank">MVN Athens</NavLink>
                     </li>
                   </ul>

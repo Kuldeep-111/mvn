@@ -59,8 +59,6 @@ const MicroLocationMap = ({data})=>{
   const [isLocationMapOpen, setIsLocationMapOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
-  console.log("location map img", data.mapIMG);
-  
 
   const locationMapImg = [{src: data.mapIMG.desktop, asset:data.mapIMG.desktop}]
   

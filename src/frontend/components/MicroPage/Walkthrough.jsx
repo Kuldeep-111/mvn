@@ -17,7 +17,7 @@ const Walkthrough = ({data})=>{
         allowFullScreen
        // Adjust size as needed
       ></iframe> */}
-     {src && <iframe src={src} title="YouTube video player" frameborder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen width="100" height="70"></iframe>}
+     {src && <iframe src={src} title="YouTube video player" frameBorder="0" allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen width="100" height="70"></iframe>}
       
    
       <Container>
