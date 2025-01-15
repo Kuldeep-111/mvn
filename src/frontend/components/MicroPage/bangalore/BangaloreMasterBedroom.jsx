@@ -8,6 +8,7 @@ import PeacockLoader from "../../../../common/Loader/micro/peacockLoader/Index";
 // import Watermark from "../../../common/watermark/Index";
 // import * as CONFIG from '../../../config/config';
 import ScrollDown from "../../../../common/scrollDown/Index";
+import Watermark from "../../../../common/watermark/Index";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -157,6 +158,7 @@ const BangaoreMasterBedroom = ({ data, onLoadComplete }) => {
     };
   }, [images, loading]); // Re-run when images or loading state changes
 
+  const lightbox_watermark = "lightbox_watermark";
   return (
     <div className="section peacock_section living_room_section pb-0" ref={sectionRef} id="peacockSection">
       {/* Show loader only on mobile */}
@@ -165,9 +167,8 @@ const BangaoreMasterBedroom = ({ data, onLoadComplete }) => {
       {/* Main content once loading is complete */}
       <>
           <div ref={containerRef} className="frames_content">
-
+            <div className="position-relative">
             <div className="image_col position-relative">
-              {/* <Watermark className={isMobile ? 'style1' : 'style2'} /> */}
 
               <canvas
                   ref={canvasRef}
@@ -176,22 +177,9 @@ const BangaoreMasterBedroom = ({ data, onLoadComplete }) => {
                   style={{ display: "block", margin: "auto" }}
                 />
 
-              {/* Mobile Canvas */}
-              {/* {isMobile && (
-                <canvas
-                  ref={canvasRef}
-                  width={window.innerWidth}
-                  height={window.innerHeight}
-                  style={{ display: "block", margin: "auto" }}
-                />
-              )} */}
-
-              {/* Desktop Image */}
-              {/* {!isMobile && (
-                <img src={CONFIG.IMAGE_URL + 'peacock/peacock.webp'} className="img-fluid peacock_img" />
-              )} */}
             </div>
-
+            <Watermark/>
+            </div>
             <ScrollDown className="color-black" />
           </div>
 
