@@ -8,6 +8,24 @@ import "./aeroGuragaon.css";
 import MicroPageGurgaon1 from "../../MicroPageGurgaon1";
 
 export const data = {
+  header:{
+    title:'MVN Athens Faridabad',
+    sidebar_section:[
+      {title:'Overview',link:'microOverview'},
+      {title:'The Living Room',link:'LIVINGROOM'},
+      {title:'Walkthrough',link:'Walkthrough'},
+      {title:'MVN ID Brochure',link:'downloadBrochure'},
+      {title:'Landscape',link:'MicroLandscape'},
+      {title:'Elevation',link:'MicroElevation'},
+      {title:'Apartment',link:'MicroApartment'},
+      {title:'Amenities',link:'MicroAmenities'},
+      {title:'Typology',link:'MicroTypology'},
+      {title:'Floor Plans',link:'MicroFloorPlan'},
+      {title:'Location Map',link:'MicroLocationMap'},
+      {title:'MVN Mall',link:'MVNMALL'},
+      {title:' Connections MVN Mall',link:'NoPolutionZone'},
+    ],
+  },
   micro_hero_section:
   {
     isVdo: true,

@@ -33,6 +33,23 @@ import MicroPageBangalore1 from "../../MicroPageBangalore1";
 //   }
 // ];
 export const dataBanglore = {
+  header:{
+    title:'MVN Athens Faridabad',
+    sidebar_section:[
+      {title:'Overview',link:'microOverview'},
+      {title:'Elegance',link:'Elegance'},
+      {title:'The Living Room',link:'LIVINGROOM'},
+      {title:'Bedroom',link:'Bedroom'},
+      {title:'Walkthrough',link:'Walkthrough'},
+      {title:'MVN ID Brochure',link:'downloadBrochure'},
+      {title:'Landscape',link:'MicroLandscape'},
+      {title:'Elevation',link:'MicroElevation'},
+      {title:'Apartment',link:'MicroApartment'},
+      {title:'Amenities',link:'MicroAmenities'},
+      {title:'Typology',link:'MicroTypology'},
+      {title:'Location Map',link:'MicroLocationMap'},
+    ],
+  },
   micro_hero_section: {
     isVdo: true,
     images: false,

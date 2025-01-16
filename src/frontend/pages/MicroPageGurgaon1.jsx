@@ -217,7 +217,7 @@ const MicroPageGurgaon1 = ({ data, loadingCount, setLoadingCount }) => {
 
       </Helmet>
 
-      <MicroHeader scrollToSection={scrollToSection} />
+      <MicroHeader scrollToSection={scrollToSection} data={data.header} />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           

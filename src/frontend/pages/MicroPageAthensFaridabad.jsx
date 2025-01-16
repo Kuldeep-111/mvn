@@ -78,7 +78,6 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
     }
   }, [newLoadingCount]);
 
-  const classData = "bg_black";
 
   return (
     <>
@@ -201,7 +200,7 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
 
       </Helmet>
 
-      <MicroHeader scrollToSection={scrollToSection} classData={classData}/>
+      <MicroHeader scrollToSection={scrollToSection} data={data.header}/>
       <div id="smooth-wrapper">
         <div id="smooth-content">
          
@@ -214,7 +213,14 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
 
           {/* Render other components only after Hero Section is loaded */}
 
+          
+          <div
+            ref={(el) =>
+              (sectionRefs.current.microOverview = el)
+            }
+          >
           <MicroOverview data={data} /> {/*no isssue*/}
+          </div>
 
           <div
             ref={(el) =>

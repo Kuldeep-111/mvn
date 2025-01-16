@@ -7,6 +7,18 @@ import highlightbgIMG from '../../../assets/images/bg/112.jpg'
 
 
 export const AthensData = {
+  header:{
+    classData:"bg_black",
+    title:'MVN Athens Faridabad',
+    sidebar_section:[
+      {title:'Overview',link:'microOverview'},
+      {title:'MVN ID Brochure',link:'downloadBrochure'},
+      {title:'Elevation',link:'MicroElevation'},
+      {title:'Amenities',link:'MicroAmenities'},
+      {title:'Typology',link:'MicroTypology'},
+      {title:'Location Map',link:'MicroLocationMap'},
+    ],
+  },
   micro_hero_section: 
   {
     isVdo: false,

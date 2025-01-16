@@ -220,7 +220,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
 
       </Helmet>
 
-      <MicroHeader scrollToSection={scrollToSection} />
+      <MicroHeader scrollToSection={scrollToSection} data={data.header} />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           
@@ -230,18 +230,21 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
           </div> 
 
           {/* Render other components only after Hero Section is loaded */}
-
+          <div ref={(el) => (sectionRefs.current.microOverview = el)}>
           <MicroOverview data={data} /> {/*no isssue*/}
+          </div>
+          <div ref={(el) => (sectionRefs.current.Elegance = el)}>
           <BangaloreLargeElevation/>
+          </div>
         
-          <div>
+          <div ref={(el) => (sectionRefs.current.LIVINGROOM = el)}>
             <LivingRoomVideoGurugram
               data={data}
               onLoadComplete={() => setLivingRoomLoaded(true)}
               isMobile={isMobile}
             />
           </div>
-          <div>
+          <div ref={(el) => (sectionRefs.current.Bedroom = el)}>
             <BangaloreMasterBedroom
               data={data}
               isMobile={isMobile}
