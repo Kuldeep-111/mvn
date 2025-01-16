@@ -1,17 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Container } from "react-bootstrap";
-import MicroHero from "../components/MicroPage/Hero";
 import MicroOverview from "../components/MicroPage/Overview";
 import MicroAmenities from "../components/MicroPage/Amenities";
-import MicroFloorPlan from "../components/MicroPage/FloorPlan";
 import MicroLocationMap from "../components/MicroPage/LocationMap";
 import Enquire from "../components/homepage/Enquire";
 import EnquireForm from "../components/homepage/EnquireForm";
-import PeacockSection from "../components/MicroPage/PeacockSection";
-import Walkthrough from "../components/MicroPage/Walkthrough";
-import MvnMall from "../components/MicroPage/MvnMall";
 import Footer from "../components/Footer";
-import Typology from "../components/homepage/Typology";
 import DownloadBrochure from "../components/MicroPage/DownloadBrochure";
 import InitialLoading from "../skeleton/Initial/Index";
 import { gsap } from "gsap";
@@ -19,19 +12,10 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import ScrollSmoother from "gsap/ScrollSmoother";
 import { Helmet } from "react-helmet";
 import MicroHeader from "../components/MicroHeader";
-import CustomCard from "../components/Card";
-import LivingRoomVideoGurugram from "../components/MicroPage/LivingRoomVideoGurugram";
-import PartyVideo from "../components/MicroPage/PartyVideo";
-import MasterBedroom from "../components/MicroPage/MasterBedroom";
-import MicroLandscape from "../components/MicroPage/Landscape";
 import MicroElevation from "../components/MicroPage/MicroElevation";
-import MicroApartment from "../components/MicroPage/MicroApartment";
-import NoPolutionZone from "../components/MicroPage/NoPolutionZone";
 
 import * as CONFIG from '../../config/config';
-import BangaloreLargeElevation from "../components/MicroPage/bangalore/BangaloreLargeElevation";
 import BangaloreTypology from "../components/MicroPage/bangalore/BangaloreTypology";
-import BangaloreMasterBedroom from "../components/MicroPage/bangalore/BangaloreMasterBedroom"
 import "./micro/Athens/athens-faridabad.css"
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -42,14 +26,8 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
   const [newLoadingCount, setNewLoadingCount] = useState(
     Math.floor(localStorage.getItem('count') || 0)
   );
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
-  const [amenitiesLoaded, setAmenitiesLoaded] = useState(false);
   const [livingRoomLoaded, setLivingRoomLoaded] = useState(true);
-  const [apartmentLoaded, setApartmentLoaded] = useState(false);
   const [masterBedroomLoaded, setMasterBedroomLoaded] = useState(true);
-  const [elevationLoaded,setElevationLoaded] = useState(false)
-  const [typologyLoaded, setTypologyLoaded] = useState(false);
-  const [landscapeLoaded, setLandscapeLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const smootherRef = useRef(null);
   const sectionRefs = useRef({});
@@ -226,14 +204,10 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
       <MicroHeader scrollToSection={scrollToSection} classData={classData}/>
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          
-
-          {/* <div ref={(el) => (sectionRefs.current.microOverview = el)}>
-            <MicroHero data={data} onLoadComplete={() => setHeroLoaded(true)} />
-          </div>  */}
+         
           <div className="AthensBanner">
-            <img src="/public/assets/athens-faridabad/banner/banner.webp" alt="Desktop Banner" />
-            <img src="/public/assets/athens-faridabad/banner/bannerSm.webp" alt="Mobile  Banner" className="d-none"/>
+            <img src={`${CONFIG.IMAGE_URL_Athens}banner/banner.webp`} alt="Desktop Banner" />
+            <img src={`${CONFIG.IMAGE_URL_Athens}banner/bannerSm.webp`} alt="Mobile  Banner" className="d-none"/>
           </div>
 
 
@@ -241,36 +215,6 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
           {/* Render other components only after Hero Section is loaded */}
 
           <MicroOverview data={data} /> {/*no isssue*/}
-          {/* <BangaloreLargeElevation/> */}
-        
-          {/* <div>
-            <LivingRoomVideoGurugram
-              data={data}
-              onLoadComplete={() => setLivingRoomLoaded(true)}
-              isMobile={isMobile}
-            />
-          </div> */}
-          {/* <div>
-            <BangaloreMasterBedroom
-              data={data}
-              isMobile={isMobile}
-              onLoadComplete={() =>
-                setMasterBedroomLoaded(true)
-              }
-            />
-          </div> */}
-          {/* <BangaloreMasterBedroom
-          
-          data={data}
-          isMobile={isMobile}
-          /> */}
-          {/* <div
-            ref={(el) =>
-              (sectionRefs.current.Walkthrough = el)
-            }
-          >
-            <Walkthrough data={data.walkthrough_section} />
-          </div> */}
 
           <div
             ref={(el) =>
@@ -279,16 +223,6 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
           >
             <DownloadBrochure />
           </div>
-          {/* <div
-             ref={(el) =>
-              (sectionRefs.current.MicroLandscape = el)
-            }
-          >
-            <MicroLandscape 
-            landScapeData={data.landscape}
-              />
-          </div> */}
-
           <div
             ref={(el) =>
               (sectionRefs.current.MicroElevation = el)
