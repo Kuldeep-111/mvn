@@ -427,9 +427,8 @@ const MicroHeader = ({ scrollToSection,data }) => {
                       <div className="top-area">
                         <div className="inner-logo d-none d-md-block">
                           <p>
-                            <span>Office:</span> MVN Group, 2nd Floor, Above
-                            McDonald's, Jansons Mall, Downtown Park II,
-                            Menakunte, Sadahalli Gate, Bangalore - 562157
+                            <span>Office:</span> MVN AERO ONE, C/o Awfis, 7th Floor, Gate No. 3 &4 Ambience Mall, Ambience Island, NH-8, DLF Phase-3, Sector-24, Gurugram
+                            CIN:ACA-4678 | PAN:ABWFM8415E
                           </p>
                           <p>
                             <span>Talk:</span> +91 79960 00196
