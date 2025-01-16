@@ -6,7 +6,7 @@ import hero_img_desk from "../../../../frontend/assets/images/micro/athens_gurug
 import highlightbgIMG from '../../../assets/images/bg/112.jpg'
 
 
-const data = {
+export const AthensData = {
   micro_hero_section: 
   {
     isVdo: false,
@@ -21,13 +21,171 @@ const data = {
     isshow: false,
   },
   overview: {
-    title: "Athens",
-    location: "Gurugram",
-    extra: "",
+    title: "MVN Athens",
+    extra: "Where Life Unfolds in Perfect Harmony",
     desc:[
-      `MVN Infrastructures proudly presents its latest residential project under the Affordable Housing Policy 2013, a visionary government initiative to provide quality homes for middle and lower-middle-class families. Strategically located in Sector 05, Gurugram, this project offers the perfect blend of affordability, modern conveniences, and natural serenity. Situated near Gurugram's industrial hub, it is surrounded by lush greenery and is well-connected to leading educational institutions like GD Goenka University, K.R. Mangalam International University, and several others, making it an ideal location for households to thrive. Licensed by the Government of Haryana and compliant with all quality standards, this project delivers thoughtfully designed, secure, and affordable homes.`
+      `MVN Athens is a residential project in Ballabhgarh, Faridabad. MVN Athens offers an Apartment. Available configurations include 3 BHK. The apartment, as per the area plan, are in the size range of 1703.0 - 1726.0 sq. ft. The property is Ready to Move. The project was launched in September 2011 and the possession date of MVN Athens is Aug 2014. MVN Athens is located in Shiv Colony, Sector 2. The project is developed by MVN Infrastructure.`,
+      "MVN Athens is equipped with various resident-centric amenities that include Lift, Rainwater Harvesting, Gymnasium, Power Backup. For families with kids, there is a Children's Play Area, nearby apart from Swimming Pool, Sports Area. Residents can make use of ATM, provisions in the project. There is 24x7 Security. Enjoy a class-apart lifestyle at MVN Athens."
     ]
   },
+    gallery: {
+      gallery:"Gallery",
+      content: {
+        desc: "Explore elegance through a visual journey of thoughtfully designed spaces, stunning architecture, and serene surroundings.",
+      },
+      images: [
+        {
+          assets: {
+            desktop: `${CONFIG.IMAGE_URL_Athens}gallery/1.webp`,
+            mobile: `${CONFIG.IMAGE_URL_Athens}gallery/1sm.webp`,
+          },
+          watermark: "right",
+        },
+        {
+          assets: {
+            desktop: `${CONFIG.IMAGE_URL_Athens}gallery/2.webp`,
+            mobile: `${CONFIG.IMAGE_URL_Athens}gallery/2sm.webp`,
+          },
+          watermark: "right",
+        },
+        {
+          assets: {
+            desktop: `${CONFIG.IMAGE_URL_Athens}gallery/3.webp`,
+            mobile: `${CONFIG.IMAGE_URL_Athens}gallery/3sm.webp`,
+          },
+          watermark: "left",
+        },
+      ],
+    },
+    amenities: {
+      bangalore_amenities:"bangalore_amenities",
+      path : CONFIG.IMAGE_URL_Athens,
+      content: {
+        desc: "Experience an exceptional range of world-class amenities, thoughtfully designed to enhance your lifestyle. Every detail is crafted to deliver unparalleled comfort and sophistication. ",
+      },
+      data: [
+        {
+          name: "Kids Play Area",
+          imgSrc: {
+            desktop: "kids.jpg",
+            mobile: "kidsSm.jpg",
+          },
+          desc: "Safe and vibrant play zones for your little ones to have fun.",
+        },
+        {
+          name: "Gym",
+          imgSrc: {
+            desktop: "gym.jpg",
+            mobile: "gymSm.jpg",
+          },
+          desc: "A modern fitness hub for workouts, yoga, and group activities.",
+        },
+        {
+          name: "Swimming Pool",
+          imgSrc: {
+            desktop: "pool.jpg",
+            mobile: "poolSm.jpg",
+          },
+          desc: "Dive into luxury with a pristine pool for leisure and fitness.",
+        },
+        {
+          name: "24/7 Security",
+          imgSrc: {
+            desktop: "security.jpg",
+            mobile: "securitySm.jpg",
+          },
+          desc: "Advanced monitoring systems for a safe and secure living experience.",
+        },
+        {
+          name: `Sports Area`,
+          imgSrc: {
+            desktop: "sport.jpg",
+            mobile: "sportSm.jpg",
+          },
+          desc: "Dedicated courts and zones for sports lovers to play their favorite games.",
+        },
+        {
+          name: "Landscaped Garden",
+          imgSrc: {
+            desktop: "garden.jpg",
+            mobile: "gardenSm.jpg",
+          },
+          desc: "Beautifully curated gardens offering tranquility and scenic views.",
+        },
+        {
+          name: "Lift",
+          imgSrc: {
+            desktop: "lift.jpg",
+            mobile: "liftSm.jpg",
+          },
+          desc: "High-quality lifts for seamless and effortless access across all floors.",
+        },
+        {
+          name: "Power Backup",
+          imgSrc: {
+            desktop: "power.jpg",
+            mobile: "powerSm.jpg",
+          },
+          desc: "Uninterrupted power supply ensuring complete convenience at all times.",
+        },
+      ],
+    },
+      typologies: {
+        desc:"Explore intricately designed floor plans catering to diverse preferences while maximizing space efficiency. Each layout is an architectural triumph, suffused with natural light and effortless elegance.",
+        tabs_name:['TOWER C','TOWER D'],
+        tabs:{   
+          tower_c: [
+          {
+            title: "Lower Level Plan",
+            area: "3419 SQFT",
+            link: "#",
+            src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/1.png`
+          },
+          {
+            title: "Upper Level Plan",
+            area: "3419 SQFT",
+            link: "#",
+            src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/2.png`
+          },
+          {
+            title: "Upper Level Plan",
+            area: "3375 SQFT",
+            link: "#",
+            src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/3.png`
+          },
+        ],  
+        tower_d: [
+        {
+          title: "Lower Level Plan",
+          area: "3419 SQFT",
+          link: "#",
+          src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/1.png`
+        },
+        {
+          title: "Upper Level Plan",
+          area: "3419 SQFT",
+          link: "#",
+          src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/2.png`
+        },
+        {
+          title: "Upper Level Plan",
+          area: "3375 SQFT",
+          link: "#",
+          src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/3.png`
+        },
+      ],
+      }
+      },
+        // locationAdvantage: {
+        //   isshow: true,
+        //   title: "Location Advantage",
+        //   desc:"Ideally located in Faridabad, MVN Athens provides a harmonious blend of connectivity and serenity, offering seamless access to the bustling hubs of Delhi/NCR.",
+        //       mapIMG: {
+        //         desktop: `${CONFIG.IMAGE_URL_BANGALORE}location-map.jpg`,
+        //         mobile: `${CONFIG.IMAGE_URL_BANGALORE}location-mapm.jpg`,
+        //       },
+        //   bangaloreLocation: true,
+        // },
   video1: {
     title: "EXPERIENCE THE BLISS OF ENDLESS VISTAS",
     // desc:'Our 13.5ft High Ceilings Will Set A Higher Standard Of Space Utilisation In Harmony With Design Aesthetics & Sophistication.',
@@ -151,30 +309,22 @@ const data = {
   },
   locationAdvantage: {
     isshow: true,
-    title: "Location Advantage",
-    mapIMG: CONFIG.IMAGE_URL + 'athens_gurugram/location.jpg',
-    locationData : [
-      {
-        distance:'40 Min',
-        title:'IGI Airport',
-      },
-      {
-        distance:'05 Min',
-        title:'KMP expressway',
-      },
-      {
-        distance:'20 Min',
-        title:'Cyber/IT offices located on Gurugram Road, Gurgaon',
-      },
-      {
-        distance:'07 Min',
-        title:'Westin resort',
-      },
-      {
-        distance:'05 Min',
-        title:'Damdama Lake & Taj Hotel',
-      },
+    title: "Location Advantage", 
+    desc:"Ideally located in Faridabad, MVN Athens provides a harmonious blend of connectivity and serenity, offering seamless access to the bustling hubs of Delhi/NCR.",
+    mapIMG: {
+      desktop: `${CONFIG.IMAGE_URL_BANGALORE}location-map.jpg`,
+      mobile: `${CONFIG.IMAGE_URL_BANGALORE}location-mapm.jpg`,
+    },
+    
+    bangaloreLocation: true,
+    chunks:1,
+    sliderItems : [
+      { title: "NH-2 (Agra Delhi)", desc: "1.8 KM" },
+      { title: "metro station", desc: "2 KM" },
+      { title: "Near Sector 12 Commercial Hub", desc: "10 Mins" },
+      { title: "Town Park", desc: "04 KM" },
     ]
+    
   },
   floorPlan:{
     title: 'Floor Plan',

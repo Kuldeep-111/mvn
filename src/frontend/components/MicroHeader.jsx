@@ -12,7 +12,7 @@ import "./Header.css";
 
 import { gsap } from "gsap";
 
-const MicroHeader = ({ scrollToSection }) => {
+const MicroHeader = ({ scrollToSection,classData }) => {
   const [scrolled, setScrolled] = useState(false);
   const [isMicro, setIsMicro] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -126,7 +126,7 @@ const MicroHeader = ({ scrollToSection }) => {
       <Navbar
         ref={headerRef}
         expand="false"
-        className={`${scrolled ? "fixed" : ""} ${isMicro ? "micro_nav" : null}`}
+        className={`${scrolled ? "fixed" : ""} ${classData} ${isMicro ? "micro_nav" : null}`}
       >
         <Container>
           <Navbar.Brand ref={logoRef} className="logo">
@@ -374,6 +374,12 @@ const MicroHeader = ({ scrollToSection }) => {
                           <ul>
                             <li>
                               <NavLink to="https://www.mvn.in/athens-faridabad/" target="_blank" onClick={() => toggleMenu("close")}>MVN Athens</NavLink>
+                            </li>
+                            <li>
+                             
+                            <NavLink to={import.meta.env.VITE_APP_URL + 'mvn-athens-faridabad1'} onClick={() => toggleMenu("close")}>
+                                     MVN Athens Faridabad
+                                    </NavLink>
                             </li>
                           </ul>
 

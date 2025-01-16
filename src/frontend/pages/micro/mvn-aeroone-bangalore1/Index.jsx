@@ -8,6 +8,7 @@ import hero_img_desk from "../../../../frontend/assets/images/micro_hero/hero_im
 
 import "./aeroGuragaon.css";
 import MicroPageGurgaon1 from "../../MicroPageGurgaon1";
+import MicroPageBangalore1 from "../../MicroPageBangalore1";
 // const images = [
 //   {
 //     assets: {
@@ -87,8 +88,8 @@ export const dataBanglore = {
     desktopPath : "assets/bangalore/images/master_bedroom/desktop/",
     // mobileJson:'/assets/bangalore/images/master_bedroom/mobile/lottieBase64.json',
     // desktopJson:'/assets/bangalore/images/master_bedroom/desktop/lottieBase64.json',
-    // mobileJson: `${CONFIG.IMAGE_URL_BANGALORE}images/master_bedroom/mobile/lottieBase64.json`,
-    // desktopJson: `${CONFIG.IMAGE_URL_BANGALORE}images/master_bedroom/desktop/lottieBase64.json`,
+    // mobileJson: `${CONFIG.IMAGE_URL_BANGALORE}master_bedroom/mobile/lottieBase64.json`,
+    // desktopJson: `${CONFIG.IMAGE_URL_BANGALORE}master_bedroom/desktop/lottieBase64.json`,
   },
   highlights: [
     "Power backup for common facilities.",
@@ -118,17 +119,17 @@ export const dataBanglore = {
     },
     images: [
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}images/landscape/2.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}landscape/2.jpg`,
         watermark: "left",
         title: "Sunken Court Hires",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}images/landscape/3.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}landscape/3.jpg`,
         watermark: "right",
         title: "Swimming Pool",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}images/landscape/1.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}landscape/1.jpg`,
         watermark: "right",
         title: "Yoga Deck",
       },
@@ -141,22 +142,22 @@ export const dataBanglore = {
     images: [
       {
         assets: {
-          desktop: `${CONFIG.IMAGE_URL_BANGALORE}images/elevation/1lg.jpg`,
-          mobile: `${CONFIG.IMAGE_URL_BANGALORE}images/elevation/1.jpg`,
+          desktop: `${CONFIG.IMAGE_URL_BANGALORE}elevation/1lg.jpg`,
+          mobile: `${CONFIG.IMAGE_URL_BANGALORE}elevation/1.jpg`,
         },
         watermark: "right",
       },
       {
         assets: {
-          desktop: `${CONFIG.IMAGE_URL_BANGALORE}images/elevation/2lg.jpg`,
-          mobile: `${CONFIG.IMAGE_URL_BANGALORE}images/elevation/2.jpg`,
+          desktop: `${CONFIG.IMAGE_URL_BANGALORE}elevation/2lg.jpg`,
+          mobile: `${CONFIG.IMAGE_URL_BANGALORE}elevation/2.jpg`,
         },
         watermark: "right",
       },
       {
         assets: {
-          desktop: `${CONFIG.IMAGE_URL_BANGALORE}images/elevation/3lg.jpg`,
-          mobile: `${CONFIG.IMAGE_URL_BANGALORE}images/elevation/3.jpg`,
+          desktop: `${CONFIG.IMAGE_URL_BANGALORE}elevation/3lg.jpg`,
+          mobile: `${CONFIG.IMAGE_URL_BANGALORE}elevation/3.jpg`,
         },
         watermark: "left",
       },
@@ -168,47 +169,47 @@ export const dataBanglore = {
     },
     images: [
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/1.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/1.jpg`,
         watermark: "left",
         title: "Master Bedroom",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/2.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/2.jpg`,
         watermark: "right",
         title: "Master Bedroom Closet",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/3.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/3.jpg`,
         watermark: "left",
         title: "Kitchen",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/4.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/4.jpg`,
         watermark: "right",
         title: "Kids Room",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/5.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/5.jpg`,
         watermark: "right",
         title: "Guest Bedroom",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/6.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/6.jpg`,
         watermark: "right",
         title: "Foyer",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/7.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/7.jpg`,
         watermark: "right",
         title: "Entry Foyer",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/8.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/8.jpg`,
         watermark: "left",
         title: "Balcony",
       },
       {
-        asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/9.jpg`,
+        asset: `${CONFIG.IMAGE_URL_BANGALORE}apartments/9.jpg`,
         watermark: "right",
         title: "Bedroom",
       },
@@ -324,6 +325,7 @@ export const dataBanglore = {
   ],
   amenities: {
     bangalore_amenities:"bangalore_amenities",
+    path : CONFIG.IMAGE_URL_BANGALORE,
     content: {
       desc: "Indulge in a range of world-class amenities tailored to meet your every desire. From wellness and leisure to relaxation and convenience, MVN Aero One offers a lifestyle perfectly aligned with your aspirations. ",
     },
@@ -493,18 +495,21 @@ export const dataBanglore = {
     },
   ],
   typologies: {
-    bhk1: [
+    desc:"Explore intricately designed floor plans catering to diverse preferences while maximizing space efficiency. Each layout is an architectural triumph, suffused with natural light and effortless elegance.",
+    tabs_name:['1 BHK','2 BHK','3 BHK'],
+    tabs:{   
+      bhk1: [
       {
         title: "1 BHK",
         area: "440 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/1bhk/1.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/1.png`
       },
       {
         title: "1 BHK",
         area: "600 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/1bhk/2.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/1bhk/2.png`
       },
     ],
     bhk2: [
@@ -512,97 +517,97 @@ export const dataBanglore = {
         title: "2 BHK",
         area: "Area:725 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/1.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/1.png`
       },
       {
         title: "2 BHK",
         area: "Area:725 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/2.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/2.png`
       },
       {
         title: "2 BHK",
         area: "Area:725 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/3.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/3.png`
       },
       {
         title: "2 BHK",
         area: "Area:725 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/4.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/4.png`
       },
       {
         title: "2 BHK",
         area: "Area:725 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/5.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/5.png`
       },
       {
         title: "2 BHK",
         area: "Area:726 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/6.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/6.png`
       },
       {
         title: "2 BHK",
         area: "Area:726 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/7.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/7.png`
       },
       {
         title: "2 BHK",
         area: "Area:730 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/8.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/8.png`
       },
       {
         title: "2 BHK",
         area: "Area:730 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/9.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/9.png`
       },
       {
         title: "2 BHK",
         area: "Area:755 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/10.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/10.png`
       },
       {
         title: "2 BHK",
         area: "Area:804 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/11.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/11.png`
       },
       {
         title: "2 BHK",
         area: "Area:804 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/12.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/12.png`
       },
       {
         title: "2 BHK",
         area: "Area:807 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/13.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/13.png`
       },
       {
         title: "2 BHK",
         area: "Area:807 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/14.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/14.png`
       },
       {
         title: "2 BHK",
         area: "Area:834 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/15.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/15.png`
       },
       {
         title: "2 BHK",
         area: "Area:834 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/16.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/2bhk/16.png`
       },
     ],
     bhk3: [
@@ -610,27 +615,28 @@ export const dataBanglore = {
         title: "3 BHK",
         area: "Area:1099 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/1.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/3bhk/1.png`
       },
       {
         title: "3 BHK",
         area: "Area:1099 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/2.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/3bhk/2.png`
       },
       {
         title: "3 BHK",
         area: "Area:1099 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/3.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/3bhk/3.png`
       },
       {
         title: "3 BHK",
         area: "Area:1099 sqft",
         link: "#",
-        src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/4.png`
+        src: `${CONFIG.IMAGE_URL_BANGALORE}floor-plan/3bhk/4.png`
       },
     ],
+  }
   },
   noPollutionZone: [
     // {
@@ -684,10 +690,35 @@ export const dataBanglore = {
     isshow: true,
     title: "Location Advantage",
     mapIMG: {
-      desktop: `${CONFIG.IMAGE_URL_BANGALORE}images/location-map.jpg`,
-      mobile: `${CONFIG.IMAGE_URL_BANGALORE}images/location-mapm.jpg`,
+      desktop: `${CONFIG.IMAGE_URL_BANGALORE}location-map.jpg`,
+      mobile: `${CONFIG.IMAGE_URL_BANGALORE}location-mapm.jpg`,
     },
     bangaloreLocation: true,
+    secondTitle:"THE LOCATION AS INVITING AS ITS ALLURE",
+    desc:"In the heart of Bangalore’s dynamic landscape, MVN Aero One offers an address that seamlessly combines connectivity and tranquility.",
+    chunks:4,
+    sliderItems : [
+      { title: "Mini Vidhana Soudha, Devanahalli", desc: "3.4 Km | 06 Min" },
+      { title: "Nandi Hills, Nandi Hills Road", desc: "27 Km | 40 Min" },
+      { title: "Timbre Drive-In Cinema, Bellary Road ", desc: "6.5 Km | 11 Min" },
+      { title: "Anjaneya Temple, Devanahalli", desc: "02 Km | 03 Min" },
+      { title: "Mar Thama Church, Devanahalli", desc: "2.6 Km | 04 Min" },
+      { title: "Kempegowda Intl. Airport", desc: "14 Km | 15 Min" },
+      { title: "K.I. Airport  Halt (Railway Station)", desc: "11 Km | 12 Min" },
+      { title: "Proposed Metro  line", desc: "13 Km | 13 Min" },
+      { title: "Devanahalli Trumpet Flyover Bellary Road", desc: "11 Km | 12 Min" },
+      { title: " Sports Village Bellary Road", desc: "05 Km | 05 Min" },
+      { title: "Clarks Exotica, Sadahalli", desc: "16 Km | 18 Min" },
+      { title: "Taj Hotel K Intl. Airport", desc: "16 Km | 15 Min" },
+      { title: "Sai Mart,  Devanahalli", desc: "3.4 Km | 03 Min" },
+      { title: "Esteem Mall, Hebbal", desc: "29 Km | 30 Min" },
+      { title: "Nalanda  Collage, Bellary Road", desc: "4 Km | 08 Min" },
+      { title: "Global Minds, Brigade Orchards", desc: "0.5 Km | 02 Min" },
+      { title: "Delhi Public  School, Sathanur", desc: "23 Km | 26 Min" },
+      { title: "IT tech Park KIADB, Devanahalli ", desc: "09 Km | 11 Min" },
+      { title: "Aerospace Sez  KIABD, Devanhalli", desc: "09 Km | 11 Min" },
+      { title: "Hardware Park KIABD, Devanhalli", desc: "15 Km | 16 Min" },
+    ]
   },
   floorPlan: {
     title: "Floor Plan",
@@ -737,8 +768,8 @@ export const dataBanglore = {
   },
 };
 
-const AeroOneGurgaon = () => {
-  return <MicroPageGurgaon1 data={data} />;
+const AeroOneBangalore = () => {
+  return <MicroPageBangalore1 data={data} />;
 };
 
-export default AeroOneGurgaon;
+export default AeroOneBangalore;

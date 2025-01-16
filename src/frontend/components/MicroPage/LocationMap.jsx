@@ -128,7 +128,7 @@ const MicroLocationMap = ({data})=>{
     })
   }, [])
 
-
+console.log(data,"data.secondTitle secondTitle")
   return(
     <section className="section location_map_section">
       <Container>
@@ -177,13 +177,13 @@ const MicroLocationMap = ({data})=>{
         </Container>
       </div>
 
-      {data.bangaloreLocation && <BangaloreLocationSlider data={data.bangaloreLocation}/>}
+      {data.bangaloreLocation && <BangaloreLocationSlider data={data}/>}
       <Container>
         <div className='about'>
           <CustomCard
             className="px-0"
-            title="THE LOCATION AS INVITING AS ITS ALLURE" 
-            desc="In the heart of Bangalore’s dynamic landscape, MVN Aero One offers an address that seamlessly combines connectivity and tranquility." 
+            title={data.secondTitle}
+            desc={data.desc} 
           />
         </div>
       </Container>

@@ -1128,6 +1128,9 @@ a {
     }
   }
 }
+.navbar.micro_nav.bg_black{
+  background-color: #000;
+}
 
 /* hero_section */
 

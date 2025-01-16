@@ -36,7 +36,7 @@ const amenityData = [
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Amenities({ amenitiesData }) {
-  const {content , data ,bangalore_amenities} = amenitiesData;
+  const {content , data ,bangalore_amenities, path} = amenitiesData;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const sectionsRef = useRef([]);
   const triggers = useRef([]);
@@ -68,10 +68,7 @@ export default function Amenities({ amenitiesData }) {
       sectionsRef.current.forEach((section, i) => {
         const bg = section.querySelector(".bg");
         if (bg) {
-          let imageUrl 
-          bangalore_amenities ?
-          imageUrl = `url(${CONFIG.IMAGE_URL_BANGALORE}images/amenities/${data[i].imgSrc.desktop})`
-          : imageUrl = `url(${CONFIG.IMAGE_URL}amenities/${data[i].imgSrc.desktop})`;
+          let imageUrl =`url(${path}amenities/${data[i].imgSrc.desktop})`;
           bg.style.backgroundImage = imageUrl;
   
           const defaultBgPos = i === 0 ? "50% 0" : `50% ${-window.innerHeight * getRatio(section)}px`;
@@ -138,41 +135,24 @@ export default function Amenities({ amenitiesData }) {
 
         {data.map((single, index) => (
           <div key={index} className="col-sm-12 col-md-4 col-lg-4">
-            {bangalore_amenities ?
+            
             <div className="card center">
               <img
-                src={`${CONFIG.IMAGE_URL_BANGALORE}images/amenities/${single.imgSrc.mobile}`}
+                src={`${CONFIG.path}amenities/${single.imgSrc.mobile}`}
                 alt={`mvn amenities ${index}`}
                 // src={CONFIG.IMAGE_URL + 'amenities/' + single.imgSrc.mobile}
                 // alt={`mvn amenities ${index}`}
                 className="img-fluid d-md-none"
               />
               <img
-                src={`${CONFIG.IMAGE_URL_BANGALORE}images/amenities/${single.imgSrc.desktop}`}
+                src={`${CONFIG.path}amenities/${single.imgSrc.desktop}`}
                 alt={`mvn amenities ${index}`}
                 // src={CONFIG.IMAGE_URL + 'amenities/' + single.imgSrc.desktop}
                 // alt={`mvn amenities ${index}`}
                 className="img-fluid d-none d-md-block"
               />
               <Watermark />
-            </div> : 
-            <div className="card center">
-              <img
-                src={`${CONFIG.IMAGE_URL}amenities/${single.imgSrc.mobile}`}
-                alt={`mvn amenities ${index}`}
-                // src={CONFIG.IMAGE_URL + 'amenities/' + single.imgSrc.mobile}
-                // alt={`mvn amenities ${index}`}
-                className="img-fluid d-md-none"
-              />
-              <img
-                src={`${CONFIG.IMAGE_URL}amenities/${single.imgSrc.desktop}`}
-                alt={`mvn amenities ${index}`}
-                // src={CONFIG.IMAGE_URL + 'amenities/' + single.imgSrc.desktop}
-                // alt={`mvn amenities ${index}`}
-                className="img-fluid d-none d-md-block"
-              />
-              <Watermark />
-            </div>}
+            </div> 
             <div className="content">
               <span className="am-name">{single.name}</span>
               {Array.isArray(single.desc) ? (

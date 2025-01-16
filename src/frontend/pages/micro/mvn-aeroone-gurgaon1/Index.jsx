@@ -302,6 +302,7 @@ export const data = {
     },  
   ],
   amenities : {
+    path : CONFIG.IMAGE_URL,
     data:[
       { 
         name: 'Elevate Your Family Time At The Exclusive Clubhouse',
@@ -544,6 +545,8 @@ export const data = {
       desktop:CONFIG.IMAGE_URL + 'gurgaon-micro/location_map.webp',
       mobile:CONFIG.IMAGE_URL + 'gurgaon-micro/location-map_sm.webp'
     },
+    secondTitle:"THE LOCATION AS INVITING AS ITS ALLURE",
+    desc:"Located at the prime 22km stone on Dwarka Expressway, Gurugram, MVN Aero One sits on the growth corridor at the first and only drop of the 23km elevated expressway. Strategically positioned at downtown Gurugram.",
     //     yasho bhoomi
     // indira gandhi international airport
     // diplomatic enclave

@@ -1,5 +1,6 @@
 export const IMAGE_URL = import.meta.env.VITE_APP_IMAGE_URL;
 export const IMAGE_URL_BANGALORE = import.meta.env.VITE_APP_IMAGE_URL_BANGALORE;
+export const IMAGE_URL_Athens = import.meta.env.VITE_APP_IMAGE_URL_Athens;
 export const VIDEO_URL = import.meta.env.VITE_APP_VIDEO_URL
 export const ADMIN_ROOT = import.meta.env.VITE_APP_ADMIN_ROOT;
 export const ADMIN_IMG_URL = import.meta.env.VITE_APP_ADMIN_IMAGE_URL;

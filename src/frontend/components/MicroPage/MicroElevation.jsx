@@ -80,9 +80,14 @@ export default function MicroElevation({ elevationData, onLoadComplete }) {
 {/* <div className="sec_title text-center color style1 mt_50">
   <h4 className="title">Elevation</h4>
 </div> */}
-<div className="heading_div mb_60 mb_sm_30" >
-  <h4 className="title title_style1 text-center">Elevation</h4>
+{elevationData.gallery ? 
+  <div className="heading_div mb_60 mb_sm_30" >
+  <h4 className="title title_style1 text-center">{elevationData.gallery}</h4>
 </div>
+:<div className="heading_div mb_60 mb_sm_30" >
+<h4 className="title title_style1 text-center">Elevation</h4>
+</div>}
+
 
 <div className="cards-container">
   <div className='row'>

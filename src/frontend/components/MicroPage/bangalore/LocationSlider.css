@@ -12,6 +12,9 @@
     min-height: 385px;
     width: 100%;
 }
+.LocationSlider .SliderContain.fit_height{
+    min-height: auto;
+}
 /* .LocationSlider .swiper{
     padding-bottom: 50px;
 } */
