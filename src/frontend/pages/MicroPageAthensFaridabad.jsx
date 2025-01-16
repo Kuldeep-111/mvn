@@ -16,7 +16,7 @@ import MicroElevation from "../components/MicroPage/MicroElevation";
 
 import * as CONFIG from '../../config/config';
 import BangaloreTypology from "../components/MicroPage/bangalore/BangaloreTypology";
-import "./micro/Athens/athens-faridabad.css"
+import "./micro/Athens/athens-faridabad.css" 
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
