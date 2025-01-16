@@ -206,8 +206,8 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
         <div id="smooth-content">
          
           <div className="AthensBanner">
-            <img src={`${CONFIG.IMAGE_URL_Athens}banner/banner.webp`} alt="Desktop Banner" />
-            <img src={`${CONFIG.IMAGE_URL_Athens}banner/bannerSm.webp`} alt="Mobile  Banner" className="d-none"/>
+            <img src={`${CONFIG.IMAGE_URL_Athens}banner/banner.webp`} alt="Desktop Banner" className="d-none d-md-block"/>
+            <img src={`${CONFIG.IMAGE_URL_Athens}banner/bannerSm.webp`} alt="Mobile  Banner" className="d-md-none"/>
           </div>
 
 

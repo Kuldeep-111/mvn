@@ -138,14 +138,14 @@ export default function Amenities({ amenitiesData }) {
             
             <div className="card center">
               <img
-                src={`${CONFIG.path}amenities/${single.imgSrc.mobile}`}
+                src={`${path}amenities/${single.imgSrc.mobile}`}
                 alt={`mvn amenities ${index}`}
                 // src={CONFIG.IMAGE_URL + 'amenities/' + single.imgSrc.mobile}
                 // alt={`mvn amenities ${index}`}
                 className="img-fluid d-md-none"
               />
               <img
-                src={`${CONFIG.path}amenities/${single.imgSrc.desktop}`}
+                src={`${path}amenities/${single.imgSrc.desktop}`}
                 alt={`mvn amenities ${index}`}
                 // src={CONFIG.IMAGE_URL + 'amenities/' + single.imgSrc.desktop}
                 // alt={`mvn amenities ${index}`}
