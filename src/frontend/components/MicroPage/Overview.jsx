@@ -87,7 +87,7 @@ const MicroOverview = ({ data }) => {
           <div className="aboutUs-box">
             {desc && Array.isArray(desc) ? (
               desc.map((el, i) => (
-                <p className="desc des_style1 text-center" key={`desc-${i}`}>
+                <p className=" des_style1 text-center" key={`desc-${i}`}>
                   {el}
                 </p>
               ))

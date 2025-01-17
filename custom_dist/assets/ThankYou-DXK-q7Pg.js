@@ -1,4 +1,4 @@
-import{r as s,j as t,V as a,X as i,o,C as r,L as c}from"./index-Bw1EYMr4.js";const g=()=>{window.scrollTo(0,0);const[e,n]=s.useState(Number(localStorage.getItem("count")));return s.useEffect(()=>{n(Number(localStorage.getItem("count")))},[localStorage.getItem("count")]),e<99?t.jsx(a,{loadingCount:e,setLoadingCount:n,fast:"true"}):t.jsxs(t.Fragment,{children:[t.jsxs(i,{children:[t.jsx("script",{children:`
+import{r as s,j as t,V as a,X as i,o,C as r,L as c}from"./index-BGQ4rrmP.js";const g=()=>{window.scrollTo(0,0);const[e,n]=s.useState(Number(localStorage.getItem("count")));return s.useEffect(()=>{n(Number(localStorage.getItem("count")))},[localStorage.getItem("count")]),e<99?t.jsx(a,{loadingCount:e,setLoadingCount:n,fast:"true"}):t.jsxs(t.Fragment,{children:[t.jsxs(i,{children:[t.jsx("script",{children:`
                     !function(f,b,e,v,n,t,s)
                     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                     n.callMethod.apply(n,arguments):n.queue.push(arguments)};

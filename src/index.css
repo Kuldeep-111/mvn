@@ -1130,6 +1130,16 @@ a {
 }
 .navbar.micro_nav.bg_black{
   background-color: #000;
+  transition: .4s;
+}
+.navbar.micro_nav.bg_shadow{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.733), transparent);
+  transition: .4s;
+}
+@media(max-width:768px){
+  .navbar.micro_nav.bg_shadow{
+    background: linear-gradient(to bottom, rgb(0 0 0 / 98%), #00000021);
+  }
 }
 
 /* hero_section */

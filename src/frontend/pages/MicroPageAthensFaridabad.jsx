@@ -17,6 +17,7 @@ import MicroElevation from "../components/MicroPage/MicroElevation";
 import * as CONFIG from '../../config/config';
 import BangaloreTypology from "../components/MicroPage/bangalore/BangaloreTypology";
 import "./micro/Athens/athens-faridabad.css" 
+import MicroHero from "../components/MicroPage/Hero";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -78,6 +79,24 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
     }
   }, [newLoadingCount]);
 
+
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 700) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const NavClass = scrolled ? "bg_black" : '';
 
   return (
     <>
@@ -200,7 +219,7 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
 
       </Helmet>
 
-      <MicroHeader scrollToSection={scrollToSection} data={data.header}/>
+      <MicroHeader scrollToSection={scrollToSection} data={data.header} NavClass={NavClass}/>
       <div id="smooth-wrapper">
         <div id="smooth-content">
          
@@ -209,8 +228,7 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
             <img src={`${CONFIG.IMAGE_URL_Athens}banner/bannerSm.webp`} alt="Mobile  Banner" className="d-md-none"/>
           </div>
 
-
-
+         
           {/* Render other components only after Hero Section is loaded */}
 
           

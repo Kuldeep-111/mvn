@@ -8,7 +8,7 @@ import highlightbgIMG from '../../../assets/images/bg/112.jpg'
 
 export const AthensData = {
   header:{
-    classData:"bg_black",
+    // classData:"bg_black",
     title:'MVN Athens Faridabad',
     sidebar_section:[
       {title:'Overview',link:'microOverview'},
@@ -21,6 +21,7 @@ export const AthensData = {
   },
   micro_hero_section: 
   {
+    athensFrames:true,
     isVdo: false,
     images:[{ imgMb: hero_img_mb, imgDesk: hero_img_desk, }],
     bannerHighLight:false,
@@ -33,7 +34,7 @@ export const AthensData = {
     isshow: false,
   },
   overview: {
-    title: "Welcome to MVN Athens",
+    title: "WMVN Athens",
     extra: "Where Imagination Shapes Timeless Harmony",
     desc:[
       "Discover a world where modern architecture interwines with the essence of affordable living. At MVN Athens, we don't just build homes; we craft masterpieces that resonate with creativity and sophistication."

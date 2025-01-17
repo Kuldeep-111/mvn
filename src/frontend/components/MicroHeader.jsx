@@ -12,7 +12,7 @@ import "./Header.css";
 
 import { gsap } from "gsap";
 
-const MicroHeader = ({ scrollToSection,data }) => {
+const MicroHeader = ({ scrollToSection,data ,NavClass}) => {
   const [scrolled, setScrolled] = useState(false);
   const [isMicro, setIsMicro] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -128,9 +128,7 @@ const MicroHeader = ({ scrollToSection,data }) => {
       <Navbar
         ref={headerRef}
         expand="false"
-        className={`${scrolled ? "fixed" : ""} ${data.classData} ${
-          isMicro ? "micro_nav" : null
-        }`}
+        className={`${scrolled ? "fixed" : ""} ${NavClass ? NavClass : "bg_shadow"} ${isMicro ? "micro_nav" : null}`}
       >
         <Container>
           <Navbar.Brand ref={logoRef} className="logo">
