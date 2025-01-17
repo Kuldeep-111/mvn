@@ -323,8 +323,8 @@ export const AthensData = {
     title: "Location Advantage", 
     desc:"Strategically nestled in Faridabad, MVN Athens ensures connectivity while surrounding you with urban conveniences and serene charm.",
     mapIMG: {
-      desktop: `${CONFIG.IMAGE_URL_Athens}athens-location.jpg`,
-      mobile: `${CONFIG.IMAGE_URL_Athens}athens-location-m.jpg`,
+      desktop: `${CONFIG.IMAGE_URL_Athens}location-map.jpg`,
+      mobile: `${CONFIG.IMAGE_URL_Athens}location-mapm.jpg`,
     },
     
     bangaloreLocation: true,
