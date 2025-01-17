@@ -15,7 +15,7 @@ export const AthensData = {
       {title:'MVN ID Brochure',link:'downloadBrochure'},
       {title:'Elevation',link:'MicroElevation'},
       {title:'Amenities',link:'MicroAmenities'},
-      {title:'Typology',link:'MicroTypology'},
+      {title:'Typologies',link:'MicroTypology'},
       {title:'Location Map',link:'MicroLocationMap'},
     ],
   },
@@ -149,19 +149,19 @@ export const AthensData = {
           tower_c: [
           {
             title: "Lower Level Plan",
-            area: "3419 SQFT",
+            area: "3419 sqft",
             link: "#",
             src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/1.png`
           },
           {
             title: "Upper Level Plan",
-            area: "3419 SQFT",
+            area: "3419 sqft",
             link: "#",
             src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/2.png`
           },
           {
             title: "Upper Level Plan",
-            area: "3375 SQFT",
+            area: "3375 sqft",
             link: "#",
             src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/3.png`
           },
@@ -169,19 +169,19 @@ export const AthensData = {
         tower_d: [
         {
           title: "Lower Level Plan",
-          area: "3419 SQFT",
+          area: "3419 sqft",
           link: "#",
           src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/1.png`
         },
         {
           title: "Upper Level Plan",
-          area: "3419 SQFT",
+          area: "3419 sqft",
           link: "#",
           src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/2.png`
         },
         {
           title: "Upper Level Plan",
-          area: "3375 SQFT",
+          area: "3375 sqft",
           link: "#",
           src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/3.png`
         },
@@ -324,8 +324,8 @@ export const AthensData = {
     title: "Location Advantage", 
     desc:"Ideally located in Faridabad, MVN Athens provides a harmonious blend of connectivity and serenity, offering seamless access to the bustling hubs of Delhi/NCR.",
     mapIMG: {
-      desktop: `${CONFIG.IMAGE_URL_BANGALORE}location-map.jpg`,
-      mobile: `${CONFIG.IMAGE_URL_BANGALORE}location-mapm.jpg`,
+      desktop: `${CONFIG.IMAGE_URL_Athens}athens-location.jpg`,
+      mobile: `${CONFIG.IMAGE_URL_Athens}athens-location-m.jpg`,
     },
     
     bangaloreLocation: true,
