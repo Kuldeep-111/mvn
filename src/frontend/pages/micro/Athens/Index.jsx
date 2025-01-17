@@ -33,17 +33,16 @@ export const AthensData = {
     isshow: false,
   },
   overview: {
-    title: "MVN Athens",
-    extra: "Where Life Unfolds in Perfect Harmony",
+    title: "Welcome to MVN Athens",
+    extra: "Where Imagination Shapes Timeless Harmony",
     desc:[
-      `MVN Athens is a residential project in Ballabhgarh, Faridabad. MVN Athens offers an Apartment. Available configurations include 3 BHK. The apartment, as per the area plan, are in the size range of 1703.0 - 1726.0 sq. ft. The property is Ready to Move. The project was launched in September 2011 and the possession date of MVN Athens is Aug 2014. MVN Athens is located in Shiv Colony, Sector 2. The project is developed by MVN Infrastructure.`,
-      "MVN Athens is equipped with various resident-centric amenities that include Lift, Rainwater Harvesting, Gymnasium, Power Backup. For families with kids, there is a Children's Play Area, nearby apart from Swimming Pool, Sports Area. Residents can make use of ATM, provisions in the project. There is 24x7 Security. Enjoy a class-apart lifestyle at MVN Athens."
+      "Discover a world where modern architecture interwines with the essence of affordable living. At MVN Athens, we don't just build homes; we craft masterpieces that resonate with creativity and sophistication."
     ]
   },
     gallery: {
       gallery:"Gallery",
       content: {
-        desc: "Explore elegance through a visual journey of thoughtfully designed spaces, stunning architecture, and serene surroundings.",
+        desc: "Step into a visual journey where every snapshot captures the seamless blend of elegance and innovation.",
       },
       images: [
         {
@@ -73,7 +72,7 @@ export const AthensData = {
       bangalore_amenities:"bangalore_amenities",
       path : CONFIG.IMAGE_URL_Athens,
       content: {
-        desc: "Experience an exceptional range of world-class amenities, thoughtfully designed to enhance your lifestyle. Every detail is crafted to deliver unparalleled comfort and sophistication. ",
+        desc: "Immerse yourself in a world of thoughtfully created amenities designed to elevate your lifestyle with comfort, convenience, and indulgence. ",
       },
       data: [
         {
@@ -82,7 +81,7 @@ export const AthensData = {
             desktop: "kids.jpg",
             mobile: "kidsSm.jpg",
           },
-          desc: "Safe and vibrant play zones for your little ones to have fun.",
+          desc: "World of wonder, where little dreams take flight.",
         },
         {
           name: "Gym",
@@ -90,7 +89,7 @@ export const AthensData = {
             desktop: "gym.jpg",
             mobile: "gymSm.jpg",
           },
-          desc: "A modern fitness hub for workouts, yoga, and group activities.",
+          desc: "Where strength meets style for your fitness sanctuary.",
         },
         {
           name: "Swimming Pool",
@@ -98,7 +97,7 @@ export const AthensData = {
             desktop: "pool.jpg",
             mobile: "poolSm.jpg",
           },
-          desc: "Dive into luxury with a pristine pool for leisure and fitness.",
+          desc: "Dive into luxury, where every splash refreshes your soul.",
         },
         {
           name: "24/7 Security",
@@ -106,7 +105,7 @@ export const AthensData = {
             desktop: "security.jpg",
             mobile: "securitySm.jpg",
           },
-          desc: "Advanced monitoring systems for a safe and secure living experience.",
+          desc: "Your safety, our promise, always around the clock.",
         },
         {
           name: `Sports Area`,
@@ -114,7 +113,7 @@ export const AthensData = {
             desktop: "sport.jpg",
             mobile: "sportSm.jpg",
           },
-          desc: "Dedicated courts and zones for sports lovers to play their favorite games.",
+          desc: "Where champions are made, and fun finds its field.",
         },
         {
           name: "Landscaped Garden",
@@ -122,7 +121,7 @@ export const AthensData = {
             desktop: "garden.jpg",
             mobile: "gardenSm.jpg",
           },
-          desc: "Beautifully curated gardens offering tranquility and scenic views.",
+          desc: "Nature’s embrace, right outside your door.",
         },
         {
           name: "Lift",
@@ -130,7 +129,7 @@ export const AthensData = {
             desktop: "lift.jpg",
             mobile: "liftSm.jpg",
           },
-          desc: "High-quality lifts for seamless and effortless access across all floors.",
+          desc: "Effortless elevation, because every step matters.",
         },
         {
           name: "Power Backup",
@@ -138,12 +137,12 @@ export const AthensData = {
             desktop: "power.jpg",
             mobile: "powerSm.jpg",
           },
-          desc: "Uninterrupted power supply ensuring complete convenience at all times.",
+          desc: "Uninterrupted living, powered for your peace of mind.",
         },
       ],
     },
       typologies: {
-        desc:"Explore intricately designed floor plans catering to diverse preferences while maximizing space efficiency. Each layout is an architectural triumph, suffused with natural light and effortless elegance.",
+        desc:"Explore meticulously designed living spaces that redefine modern architecture, offering a perfect balance of style and functionality.",
         tabs_name:['TOWER C','TOWER D'],
         tabs:{   
           tower_c: [
@@ -322,7 +321,7 @@ export const AthensData = {
   locationAdvantage: {
     isshow: true,
     title: "Location Advantage", 
-    desc:"Ideally located in Faridabad, MVN Athens provides a harmonious blend of connectivity and serenity, offering seamless access to the bustling hubs of Delhi/NCR.",
+    desc:"Strategically nestled in Faridabad, MVN Athens ensures connectivity while surrounding you with urban conveniences and serene charm.",
     mapIMG: {
       desktop: `${CONFIG.IMAGE_URL_Athens}athens-location.jpg`,
       mobile: `${CONFIG.IMAGE_URL_Athens}athens-location-m.jpg`,
