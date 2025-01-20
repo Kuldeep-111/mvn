@@ -59,6 +59,7 @@ const MicroPageBangalore1 = React.lazy(()=>import("./frontend/pages/MicroPageBan
 import { data } from "./frontend/pages/micro/mvn-aeroone-gurgaon1/Index.jsx";
 import { dataBanglore } from "./frontend/pages/micro/mvn-aeroone-bangalore1/Index.jsx";
 import {AthensData} from "./frontend/pages/micro/Athens/Index.jsx"
+import { AthensPhase2Data } from "./frontend/pages/micro/athens-phase-2/Index.jsx";
 import FrontendRoute from "./common/FrontendRoute.jsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -72,6 +73,7 @@ import "./savan.css";
 import './adarsh.css'
 import ContactUs from "./admin/ContactUs.jsx";
 import MicroPageAthensFaridabad from "./frontend/pages/MicroPageAthensFaridabad.jsx";
+import MicroPageGurgaonPhase2 from "./frontend/pages/MicroPageGurgaonPhase2.jsx";
 
 
 const router = createBrowserRouter([
@@ -84,7 +86,8 @@ const router = createBrowserRouter([
         element: (
           <FrontendRoute>
             
-            <MicroPageAthensFaridabad data={AthensData}/>
+            <MicroPageGurgaonPhase2 data={AthensPhase2Data}/>
+            {/* <MicroPageAthensFaridabad data={AthensData}/> */}
             {/* <MicroPageBangalore1 data={dataBanglore} /> */}
             {/* <Homepage /> */}
             {/* <MicroPageBangalore1 data={dataBanglore} /> */}
