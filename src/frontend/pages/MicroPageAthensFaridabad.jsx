@@ -83,7 +83,8 @@ const MicroPageAthensFaridabad = ({ data, loadingCount, setLoadingCount }) => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 700) {
+    const scrollThreshold = window.innerWidth <= 768 ? 400 : 700; // Adjust breakpoint as needed
+    if (window.scrollY > scrollThreshold) {
       setScrolled(true);
     } else {
       setScrolled(false);
