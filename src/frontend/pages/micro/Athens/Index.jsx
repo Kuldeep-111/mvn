@@ -34,7 +34,7 @@ export const AthensData = {
     isshow: false,
   },
   overview: {
-    title: "WMVN Athens",
+    title: "MVN Athens",
     extra: "Where Imagination Shapes Timeless Harmony",
     desc:[
       "Discover a world where modern architecture interwines with the essence of affordable living. At MVN Athens, we don't just build homes; we craft masterpieces that resonate with creativity and sophistication."

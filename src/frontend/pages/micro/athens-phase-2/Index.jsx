@@ -23,15 +23,17 @@ export const AthensPhase2Data = {
   },
   overview: {
     title: "MVN Athens",
-    extra: "Where Imagination Shapes Timeless Harmony",
+    extra: "Your dream paradise",
     desc:[
-      "Discover a world where modern architecture interwines with the essence of affordable living. At MVN Athens, we don't just build homes; we craft masterpieces that resonate with creativity and sophistication."
-    ]
+      "MVN is a group formed with the vision of delivery of projects that inbibe its spirit of perfection & consumer satisfaction based on the philosophy of trust & integrity. Their clear vision leads to a seamless experience for the customers.",
+      "Our happiness dwells in the hearts of our home buyers. So, where somebody talks about customer satisfaction we are all ears. All our efforts are committed towards it. Delivery before time, Affordable luxury, Reliability & Quality in terms of material used for construction backed by a dedicated in -house team to look after the day to day affairs. MVN Athens, a residential affordable housing scheme by the State of Haryana, a gated community in sector-5, Sohna- Gurugram is home to more than 1104 families in Phase I & II."
+    ],
+    rera:"RERA NO. RC/REP/HARERA/GGM/326/58/2019/20",
   },
     gallery: {
       gallery:"Gallery",
       content: {
-        desc: "Step into a visual journey where every snapshot captures the seamless blend of elegance and innovation.",
+        desc: "Perfect amalgamation of comfort, convenience, and cost effectiveness.",
       },
       images: [
         {
