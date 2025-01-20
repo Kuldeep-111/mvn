@@ -156,7 +156,7 @@ const LivingRoomVideoGurugram = ({ data, onLoadComplete }) => {
 
       {/* Main content once loading is complete */}
       <>
-          <div ref={containerRef} className="frames_content">
+          <div ref={containerRef} className="frames_content Scroll_Height">
 
             <div className="image_col position-relative">
               {/* <Watermark className={isMobile ? 'style1' : 'style2'} /> */}

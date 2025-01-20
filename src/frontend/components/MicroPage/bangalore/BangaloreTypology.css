@@ -12,7 +12,7 @@ background-size: 100%;transition: 0.5s;}
 .typology_section ul li .active{background-color: var(--golden);padding: 10px 25px;border-top-left-radius: 5px;border-top-right-radius: 5px;
 color: #131313;text-decoration: none;font-family: "Tinos-Regular";font-size: 18px;letter-spacing: 1px;text-transform: uppercase;}
 
-.typology_section .carousel-inner .carousel-item img{min-width: 42%; width: 42%;display: block;}
+.typology_section .carousel-inner .carousel-item img{ width: 350px;display: block;}
 .typology_section .nav-tabs {padding-bottom: 6px;border-bottom: 1px solid var(--golden);}
 .typology_section .carousel-inner .carousel-caption{position: unset; left: 0;justify-content: start;right: unset;top: 25%;}
 .typology_section .carousel-inner .carousel-caption h1:before{display: none;}

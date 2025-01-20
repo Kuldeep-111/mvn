@@ -5219,5 +5219,10 @@ footer {
   bottom: 10%;
   height: fit-content;
 }
-
+.Scroll_Height ,.Scroll_Height .image_col,.Scroll_Height .image_col canvas{
+  height: calc(100vh - 79px);
+}
+.Scroll_Height .image_col canvas{
+  width: 100vw;
+}
 /* bangalore amenities style end */

@@ -166,7 +166,7 @@ const BangaoreMasterBedroom = ({ data, onLoadComplete }) => {
 
       {/* Main content once loading is complete */}
       <>
-          <div ref={containerRef} className="frames_content">
+          <div ref={containerRef} className="frames_content Scroll_Height">
             <div className="position-relative">
             <div className="image_col position-relative">
 
