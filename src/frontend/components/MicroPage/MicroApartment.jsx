@@ -62,7 +62,7 @@ const lightbox_watermark = "lightbox_watermark";
         <Container>
           <div className='about'>
             <CustomCard
-              className="px-0"
+              className="px-0 pb-0"
               title={contents.title || ''}
               desc={contents.desc || ''}
             />
