@@ -18,6 +18,7 @@ import * as CONFIG from '../../config/config';
 import BangaloreTypology from "../components/MicroPage/bangalore/BangaloreTypology";
 import "./micro/Athens/athens-faridabad.css" 
 import MicroHero from "../components/MicroPage/Hero";
+import AthensFeatures from "../components/MicroPage/Athens-phase-2/AthensFeatures";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -222,11 +223,11 @@ const MicroPageGurgaonPhase2 = ({ data, loadingCount, setLoadingCount }) => {
 
       <MicroHeader scrollToSection={scrollToSection} data={data.header} NavClass={NavClass}/>
       <div id="smooth-wrapper">
-        <div id="smooth-content">
+        <div id="smooth-content"> 
          
           <div className="AthensBanner">
-            <img src={`${CONFIG.IMAGE_URL_Athens}banner/banner.webp`} alt="Desktop Banner" className="d-none d-md-block"/>
-            <img src={`${CONFIG.IMAGE_URL_Athens}banner/bannerSm.webp`} alt="Mobile  Banner" className="d-md-none"/>
+            <img src={`${CONFIG.IMAGE_URL_Athens_Phase_2}banner/banner.jpg`} alt="Desktop Banner" className="d-none d-md-block"/>
+            <img src={`${CONFIG.IMAGE_URL_Athens_Phase_2}banner/banner-m.jpg`} alt="Mobile  Banner" className="d-md-none"/>
           </div>
 
          
@@ -256,6 +257,7 @@ const MicroPageGurgaonPhase2 = ({ data, loadingCount, setLoadingCount }) => {
             <MicroElevation elevationData={data.gallery}
               onLoadComplete={() => setElevationLoaded(true)}/>
           </div>
+          <AthensFeatures featuresData={data.features}/>
 
     
 

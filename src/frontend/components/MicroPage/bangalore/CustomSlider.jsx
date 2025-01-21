@@ -31,8 +31,9 @@ const Slider = ({slides}) => {
                   alt={`Slide ${index + 1}`}
                 />
                 <div className="carousel-caption">
-                  <h1 className="main-title">{slide.title}</h1>
-                  <span>Area: {slide.area}</span>
+                  {slide.title && <h1 className="main-title">{slide.title}</h1>}
+                  {slide.area && <span>Area: {slide.area}</span>}
+                  
                   <div className="link">
                     <a href={slide.link}>View Details</a>
                   </div>

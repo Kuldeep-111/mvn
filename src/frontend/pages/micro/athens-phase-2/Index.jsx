@@ -1,7 +1,5 @@
 import React from "react";
-import MicroPage from "../../Micro";
 import * as CONFIG from '../../../../config/config';
-import highlightbgIMG from '../../../assets/images/bg/112.jpg'
 import MicroPageGurgaonPhase2 from "../../MicroPageGurgaonPhase2";
 
 
@@ -18,9 +16,6 @@ export const AthensPhase2Data = {
       {title:'Location Map',link:'MicroLocationMap'},
     ],
   },
-  bannerHighLight: {
-    isshow: false,
-  },
   overview: {
     title: "MVN Athens",
     extra: "Your dream paradise",
@@ -30,7 +25,7 @@ export const AthensPhase2Data = {
     ],
     rera:"RERA NO. RC/REP/HARERA/GGM/326/58/2019/20",
   },
-    gallery: {
+  gallery: {
       gallery:"Gallery",
       content: {
         desc: "Perfect amalgamation of comfort, convenience, and cost effectiveness.",
@@ -38,339 +33,188 @@ export const AthensPhase2Data = {
       images: [
         {
           assets: {
-            desktop: `${CONFIG.IMAGE_URL_Athens}gallery/1.webp`,
-            mobile: `${CONFIG.IMAGE_URL_Athens}gallery/1sm.webp`,
+            desktop: `${CONFIG.IMAGE_URL_Athens_Phase_2}gallery/1.webp`,
+            mobile: `${CONFIG.IMAGE_URL_Athens_Phase_2}gallery/1.jpg`,
           },
           watermark: "right",
         },
         {
           assets: {
-            desktop: `${CONFIG.IMAGE_URL_Athens}gallery/2.webp`,
-            mobile: `${CONFIG.IMAGE_URL_Athens}gallery/2sm.webp`,
+            desktop: `${CONFIG.IMAGE_URL_Athens_Phase_2}gallery/2.webp`,
+            mobile: `${CONFIG.IMAGE_URL_Athens_Phase_2}gallery/2.jpg`,
           },
           watermark: "right",
         },
         {
           assets: {
-            desktop: `${CONFIG.IMAGE_URL_Athens}gallery/3.webp`,
-            mobile: `${CONFIG.IMAGE_URL_Athens}gallery/3sm.webp`,
+            desktop: `${CONFIG.IMAGE_URL_Athens_Phase_2}gallery/3.webp`,
+            mobile: `${CONFIG.IMAGE_URL_Athens_Phase_2}gallery/3.jpg`,
           },
           watermark: "left",
         },
       ],
-    },
-    amenities: {
+  },
+  features:{
+    title:"Feature So Unique",
+    desc:"Designed to delight at every step.",
+    src:"/public/assets/athens-gurgaon-phase-2/elevation.png",
+    list:[
+      "Gated complex with 24 Hour Security",
+      "Smart distribution of power and water supply",
+      "Jogging track",
+      "Commercial Complex",
+      "Organised landscape",
+      "Toddlers Sand Pitch",
+      "90% RCC work",
+      "CCTV Security"
+    ],
+  },
+  amenities: {
       bangalore_amenities:"bangalore_amenities",
-      path : CONFIG.IMAGE_URL_Athens,
+      path : CONFIG.IMAGE_URL_Athens_Phase_2,
       content: {
-        desc: "Immerse yourself in a world of thoughtfully created amenities designed to elevate your lifestyle with comfort, convenience, and indulgence. ",
+        desc: "Immerse yourself in a luxurious array of world-class amenities crafted to elevate your lifestyle.",
       },
       data: [
         {
           name: "Kids Play Area",
           imgSrc: {
-            desktop: "kids.jpg",
-            mobile: "kidsSm.jpg",
+            desktop: "1.jpg",
+            mobile: "1.jpg",
           },
-          desc: "World of wonder, where little dreams take flight.",
+          desc: "A dynamic, fun space to keep children active and entertained.",
         },
         {
-          name: "Gym",
+          name: "Landscaped outdoor Seating",
           imgSrc: {
-            desktop: "gym.jpg",
-            mobile: "gymSm.jpg",
+            desktop: "2.jpg",
+            mobile: "2.jpg",
           },
-          desc: "Where strength meets style for your fitness sanctuary.",
+          desc: "Scenic seating areas for outdoor conversations and relaxation.",
         },
         {
-          name: "Swimming Pool",
+          name: "Lawn",
           imgSrc: {
-            desktop: "pool.jpg",
-            mobile: "poolSm.jpg",
+            desktop: "3.jpg",
+            mobile: "3.jpg",
           },
-          desc: "Dive into luxury, where every splash refreshes your soul.",
+          desc: "Expansive, well-manicured greens ideal for picnics or quiet relaxation.",
         },
         {
           name: "24/7 Security",
           imgSrc: {
-            desktop: "security.jpg",
-            mobile: "securitySm.jpg",
+            desktop: "4.jpg",
+            mobile: "4.jpg",
           },
-          desc: "Your safety, our promise, always around the clock.",
+          desc: "Cutting-edge security ensuring a worry-free lifestyle.",
         },
         {
-          name: `Sports Area`,
+          name: `Landscaped Walkway`,
           imgSrc: {
-            desktop: "sport.jpg",
-            mobile: "sportSm.jpg",
+            desktop: "5.jpg",
+            mobile: "5.jpg",
           },
-          desc: "Where champions are made, and fun finds its field.",
+          desc: "Comfortable indoor nooks designed for a blend of elegance and coziness.",
         },
         {
-          name: "Landscaped Garden",
+          name: "Clean & Peaceful environment",
           imgSrc: {
-            desktop: "garden.jpg",
-            mobile: "gardenSm.jpg",
+            desktop: "6.jpg",
+            mobile: "6.jpg",
           },
-          desc: "Nature’s embrace, right outside your door.",
+          desc: "A calm, pollution-free space promoting well-being.",
         },
         {
-          name: "Lift",
+          name: "Landscaped Indoor Seating",
           imgSrc: {
-            desktop: "lift.jpg",
-            mobile: "liftSm.jpg",
+            desktop: "7.jpg",
+            mobile: "7.jpg",
           },
-          desc: "Effortless elevation, because every step matters.",
+          desc: "Comfortable indoor nooks designed for a blend of elegance and coziness.",
         },
         {
-          name: "Power Backup",
+          name: "Community Center",
           imgSrc: {
-            desktop: "power.jpg",
-            mobile: "powerSm.jpg",
+            desktop: "8.jpg",
+            mobile: "8.jpg",
           },
-          desc: "Uninterrupted living, powered for your peace of mind.",
+          desc: "A versatile space for events, meetings, and fostering connections.",
         },
       ],
-    },
-      typologies: {
-        desc:"Explore meticulously designed living spaces that redefine modern architecture, offering a perfect balance of style and functionality.",
-        tabs_name:['TOWER C','TOWER D'],
+  },
+  typologies: {
+        desc:"Discover expertly crafted floor plans that maximize space, natural light, and luxurious living.",
+        tabs_name:['TOWER A','TOWER B'],
         tabs:{   
           tower_c: [
           {
-            title: "Lower Level Plan",
-            area: "3419 sqft",
+            title: "TOWER A1",
+            // area: "3419 sqft",
             link: "#",
-            src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/1.png`
+            src: `${CONFIG.IMAGE_URL_Athens_Phase_2}floor-plan/plansf1.jpg`
           },
           {
-            title: "Upper Level Plan",
-            area: "3419 sqft",
+            title: "TOWER A2",
+            // area: "3419 sqft",
             link: "#",
-            src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/2.png`
-          },
-          {
-            title: "Upper Level Plan",
-            area: "3375 sqft",
-            link: "#",
-            src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/3.png`
+            src: `${CONFIG.IMAGE_URL_Athens_Phase_2}floor-plan/plansf2.jpg`
           },
         ],  
         tower_d: [
+          {
+            title: "TOWER B1",
+            // area: "3375 sqft",
+            link: "#",
+            src: `${CONFIG.IMAGE_URL_Athens_Phase_2}floor-plan/plansf3.jpg`
+          },
         {
-          title: "Lower Level Plan",
-          area: "3419 sqft",
+          title: "TOWER B2",
+          // area: "3419 sqft",
           link: "#",
-          src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/1.png`
+          src: `${CONFIG.IMAGE_URL_Athens_Phase_2}floor-plan/plansf4.jpg`
         },
         {
-          title: "Upper Level Plan",
-          area: "3419 sqft",
+          title: "TOWER B3,B5,B7",
+          // area: "3419 sqft",
           link: "#",
-          src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/2.png`
-        },
-        {
-          title: "Upper Level Plan",
-          area: "3375 sqft",
-          link: "#",
-          src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/3.png`
-        },
+          src: `${CONFIG.IMAGE_URL_Athens_Phase_2}floor-plan/plansf5.jpg`
+        }
+        // {
+        //   title: "Upper Level Plan",
+        //   area: "3375 sqft",
+        //   link: "#",
+        //   src: `${CONFIG.IMAGE_URL_Athens_Phase_2}floor-plan/towerd/3.png`
+        // },
       ],
       }
-      },
-        // locationAdvantage: {
-        //   isshow: true,
-        //   title: "Location Advantage",
-        //   desc:"Ideally located in Faridabad, MVN Athens provides a harmonious blend of connectivity and serenity, offering seamless access to the bustling hubs of Delhi/NCR.",
-        //       mapIMG: {
-        //         desktop: `${CONFIG.IMAGE_URL_BANGALORE}location-map.jpg`,
-        //         mobile: `${CONFIG.IMAGE_URL_BANGALORE}location-mapm.jpg`,
-        //       },
-        //   bangaloreLocation: true,
-        // },
-  video1: {
-    title: "EXPERIENCE THE BLISS OF ENDLESS VISTAS",
-    // desc:'Our 13.5ft High Ceilings Will Set A Higher Standard Of Space Utilisation In Harmony With Design Aesthetics & Sophistication.',
-    isVdo: false,
-  },
-  video2: {
-    title: "ESCAPE TO EXCLUSIVITY",
-    desc: "Dive into your own private pool with a grand view, just a few steps away from your living room",
-    isVdo: false,
-  },
-  living_room_video:{
-    title: "ESCAPE TO EXCLUSIVITY",
-    desc: "Experience the elegance of a sliding door that seamlessly connects your living space to the outdoors, transforming the ambiance with every glide.",
-    isVdo: false,
-  },
-  video3: {
-    title: "ELEVATED LIVING",
-    desc: "OUR 13.5FT HIGH CEILINGS WILL SET A HIGHER STANDARD OF SPACE UTILISATION IN HARMONY WITH DESIGN AESTHETICS & SOPHISTICATION",
-    isVdo: false,
-  },
-  masterBedroom: {
-    title: "MASTER BEDROOM",
-    desc: "If You Think You Know What Lavishness Means It's Time You Got A New Perspective",
-    isVdo: false,
-  },
-  Slides: {
-    isshow: true,
-  },
-  enquiryBTN:{
-    isshow:true,
-    mail: "info@example.in",
-  },
-  menities_section: [
-    {
-      title: 'Billiards',
-      images: {
-        lg: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/Billiards.webp',
-        mb: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/BilliardsSm.webp',
-      }
-    },
-    {
-      title: 'Gym',
-      images: {
-        lg: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/Gym.webp',
-        mb: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/GymSm.webp',
-      }
-    },
-    {
-      title: 'Hot Tub Lake View',
-      images: {
-        lg: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/HotTubLakeView.webp',
-        mb: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/HotTubLakeViewSm.webp',
-      }
-    },
-    {
-      title: 'Party lawn',
-      images: {
-        lg: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/Partylawn.webp',
-        mb: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/PartylawnSm.webp',
-      }
-    },
-    {
-      title: 'Croquet view',
-      images: {
-        lg: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/Croquetview.webp',
-        mb: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/CroquetviewSm.webp',
-      }
-    },
-    {
-      title: 'Outdoor cinema',
-      images: {
-        lg: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/Outdoorcinema.webp',
-        mb: CONFIG.IMAGE_URL + 'aero-bangalore/amenities/OutdoorcinemaSm.webp',
-      }
-    },
-    
-  ],
-  highlightbg: {
-    isshow: true,
-    img: highlightbgIMG
-  },
-  highlight:{
-    isshow: true,
-    title: "SALIENT FEATURES",
-    desc: [
-      ``,
-    ],
-    point:[
-      `40 mins. drive from the IGI Airport`,
-`Open Gym, Kids Play Area`,
-`Creche, Jogging Track`,
-`Daily Needs & other retail Facility within the complex`,
-`Most secure site to commute at night, as close to existing posh`,
-`Residential Colony`,
-`All amenities like hospital, market & sports stadium is within walking distance`,
-`KMP expressway just 5 mins`,
-`20 mins. drive from the Cyber/IT offices located on Gurugram Road, Gurgaon`,
-`Westin resort is just 7 mins`,
-`Damdama Lake, Taj Hotel and tourist place is just 5 mins`,
-`Very close & clear view of beautiful Aravali Hills`,
-`Pollution-free healthy environment`,
-`Up to 90% Loan available from the leading banks`,
-`Easily Accessible to all major cities of Delhi NCR ie Faridabad, Noida, Gurugram`,
-`Badshahpur Flyover - A 2km elevated road for Fast & Hassle-free drive.`,
-`Well known Educational Hub.`,
-`Delhi-Mumbai Industrial Corridor (DMIC) is passing through the south of Gurugram.`,
-`Industrial Model Township (IMT-Gurugram) is off 1700acres approx which is 3 times of IMT Manesar on KMP Expressway`,
-`60 meters wide & 8 km long road from Golf Course Extension Road (Gurugram) to Gurugram.`,
-`6-lane, 90-meter wide road National Highway to South of Gurugram.`,
-`A Calm & Fresher neighbourhood Environment.`,
-
-
-
-
-      
-      // "Pollution-free healthy environment",
-      // "A Calm & Fresher neighbourhood Environment.",
-      // "Most secure site to commute at night, as close to existing posh Residential Colony",
-      // "Very close & clear view of beautiful Aravali Hills",
-    ]
   },
   locationAdvantage: {
     isshow: true,
     title: "Location Advantage", 
-    desc:"Strategically nestled in Faridabad, MVN Athens ensures connectivity while surrounding you with urban conveniences and serene charm.",
+    desc:"Strategically Located for Convenience",
     mapIMG: {
-      desktop: `${CONFIG.IMAGE_URL_Athens}location-map.jpg`,
-      mobile: `${CONFIG.IMAGE_URL_Athens}location-mapm.jpg`,
+      desktop: `${CONFIG.IMAGE_URL_Athens_Phase_2}location-map.jpg`,
+      mobile: `${CONFIG.IMAGE_URL_Athens_Phase_2}location-mapm.jpg`,
     },
     
     bangaloreLocation: true,
-    chunks:1,
+    chunks:3,
     sliderItems : [
-      { title: "NH-2 (Agra Delhi)", desc: "1.8 KM" },
-      { title: "metro station", desc: "2 KM" },
-      { title: "Near Sector 12 Commercial Hub", desc: "10 Mins" },
-      { title: "Town Park", desc: "04 KM" },
+      { title: "IGI Airport", desc: "40 Mins" },
+      { title: "Huda City Center", desc: "20 Mins" },
+      { title: "Rajiv Chowk", desc: "18 Mins" },
+      { title: "IFFCO Chowk", desc: "22 Mins" },
+      { title: "KMP (Kundali Manaser Palwal) Expressway", desc: "05 Mins" },
+      { title: "IMT (Industrial Model Town) Sohna", desc: "05 Mins" },
+      { title: "Golf Course Road", desc: "20 Mins" },
+      { title: "Aravalis in the Backdrop", desc: "" },
+      { title: "Universities / Schools (GD Goenka / RK Manglam / Ryan / Pathways/DPS)", desc: "05 - 10 Mins" },
+      { title: "Hospitals", desc: "10 Mins" },
+      { title: "Malls", desc: "10 Mins" },
+      { title: "DMIC (Delhi Mumbai Industrial Coridor)", desc: "05 Mins" },
     ]
     
   },
-  floorPlan:{
-    title: 'Floor Plan',
-
-    floorPlanData : [
-      {
-        title:'Tower A1 Floor Plan',
-        thumbnail:CONFIG.IMAGE_URL + 'athens_gurugram/floorPlan/towerA1.webp',
-      },
-      {
-        title:'Tower A2 Floor Plan',
-        thumbnail:CONFIG.IMAGE_URL + 'athens_gurugram/floorPlan/towerA2.webp',
-      },
-      {
-        title:'Tower B1 Floor Plan',
-        thumbnail:CONFIG.IMAGE_URL + 'athens_gurugram/floorPlan/towerB1.webp',
-      },
-      {
-        title:'Tower B2 Floor Plan',
-        thumbnail:CONFIG.IMAGE_URL + 'athens_gurugram/floorPlan/towerB2.webp',
-      },
-      {
-        title:'1 BHK Floor Plan',
-        thumbnail:CONFIG.IMAGE_URL + 'athens_gurugram/floorPlan/type-4.webp',
-      },
-      {
-        title:'2 BHK Floor Plan',
-        thumbnail:CONFIG.IMAGE_URL + 'athens_gurugram/floorPlan/type1.webp',
-      },
-      
-    ]
-  },
-  rera:{
-    isshow: true,
-    raraDetails:[
-      `RERA Registration no : RC/REP/HARERA/GGM/326/58/2019/20`
-    ]    
-  },
-  noPluutionZone:{
-    isAllow:false
-  },
-  walkthrough:{
-    isshow:false
-  }
   
 };
 
