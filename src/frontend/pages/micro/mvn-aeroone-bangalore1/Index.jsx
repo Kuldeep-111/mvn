@@ -109,7 +109,8 @@ export const dataBanglore = {
   },
   walkthrough_section: {
     src: "https://www.youtube.com/embed/gJqfXn7vR9M",
-    title: "Virtual Tour",
+    // title: "Virtual Tour",
+    title: "Walkthrough",
     desc: "Experience MVN Aero One through a captivating virtual journey that unveils its every nuance. From awe-inspiring entrances to serene interiors, immerse yourself in spaces designed for a life of unparalleled opulence.",
   },
   landscape: {
@@ -496,13 +497,13 @@ export const dataBanglore = {
     bhk1: [
       {
         title: "1 BHK",
-        area: "440 sqft",
+        area: "440 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/1bhk/1.png`
       },
       {
         title: "1 BHK",
-        area: "600 sqft",
+        area: "600 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/1bhk/2.png`
       },
@@ -510,97 +511,97 @@ export const dataBanglore = {
     bhk2: [
       {
         title: "2 BHK",
-        area: "Area:725 sqft",
+        area: "725 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/1.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 sqft",
+        area: "725 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/2.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 sqft",
+        area: "725 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/3.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 sqft",
+        area: "725 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/4.png`
       },
       {
         title: "2 BHK",
-        area: "Area:725 sqft",
+        area: "725 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/5.png`
       },
       {
         title: "2 BHK",
-        area: "Area:726 sqft",
+        area: "726 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/6.png`
       },
       {
         title: "2 BHK",
-        area: "Area:726 sqft",
+        area: "726 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/7.png`
       },
       {
         title: "2 BHK",
-        area: "Area:730 sqft",
+        area: "730 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/8.png`
       },
       {
         title: "2 BHK",
-        area: "Area:730 sqft",
+        area: "730 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/9.png`
       },
       {
         title: "2 BHK",
-        area: "Area:755 sqft",
+        area: "755 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/10.png`
       },
       {
         title: "2 BHK",
-        area: "Area:804 sqft",
+        area: "804 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/11.png`
       },
       {
         title: "2 BHK",
-        area: "Area:804 sqft",
+        area: "804 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/12.png`
       },
       {
         title: "2 BHK",
-        area: "Area:807 sqft",
+        area: "807 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/13.png`
       },
       {
         title: "2 BHK",
-        area: "Area:807 sqft",
+        area: "807 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/14.png`
       },
       {
         title: "2 BHK",
-        area: "Area:834 sqft",
+        area: "834 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/15.png`
       },
       {
         title: "2 BHK",
-        area: "Area:834 sqft",
+        area: "834 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/2bhk/16.png`
       },
@@ -608,25 +609,25 @@ export const dataBanglore = {
     bhk3: [
       {
         title: "3 BHK",
-        area: "Area:1099 sqft",
+        area: "1099 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/1.png`
       },
       {
         title: "3 BHK",
-        area: "Area:1099 sqft",
+        area: "1099 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/2.png`
       },
       {
         title: "3 BHK",
-        area: "Area:1099 sqft",
+        area: "1099 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/3.png`
       },
       {
         title: "3 BHK",
-        area: "Area:1099 sqft",
+        area: "1099 sq.ft.",
         link: "#",
         src: `${CONFIG.IMAGE_URL_BANGALORE}images/floor-plan/3bhk/4.png`
       },
@@ -682,7 +683,7 @@ export const dataBanglore = {
   },
   locationAdvantage: {
     isshow: true,
-    title: "Location Advantage",
+    title: "Location Advantages",
     mapIMG: {
       desktop: `${CONFIG.IMAGE_URL_BANGALORE}images/location-map.jpg`,
       mobile: `${CONFIG.IMAGE_URL_BANGALORE}images/location-mapm.jpg`,

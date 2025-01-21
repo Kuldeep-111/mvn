@@ -3632,7 +3632,7 @@ footer {
 
 .download_brochure_section{
 
-  padding-top: 100px;
+  padding-top: 30px;
 
   .btn_style4{
 
@@ -5226,3 +5226,38 @@ footer {
   width: 100vw;
 }
 /* bangalore amenities style end */
+/* bangalore walkthrough start */
+.Walkthrough_video{
+  position: relative;
+}
+.Walkthrough_video .Close_video{
+  position: absolute;
+  right: 175px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.Walkthrough_video .Close_video img{
+  width: 18px;
+
+}
+.Walkthrough_video .Close_video span{
+  margin-top: 5px;
+  font-size: 15px;
+  color: #ebe8e8;
+}
+@media (max-width:620px){
+  .Walkthrough_video .Close_video{
+    right: 10px;
+    top: 50px;
+  }
+  .Walkthrough_video .Close_video span{
+    display: none;
+  }
+}
+/* bangalore walkthrough end */

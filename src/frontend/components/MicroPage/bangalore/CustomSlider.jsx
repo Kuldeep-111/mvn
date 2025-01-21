@@ -4,7 +4,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
+
 const Slider = ({slides}) => {
+  const [index, setIndex] = useState(-1);
   return (
     <>
     <Swiper
@@ -29,6 +35,7 @@ const Slider = ({slides}) => {
                   data-speed="clamp(0.9)"
                   src={slide.src}
                   alt={`Slide ${index + 1}`}
+                  onClick={() => setIndex(index)}
                 />
                 <div className="carousel-caption">
                   <h1 className="main-title">{slide.title}</h1>
@@ -45,46 +52,13 @@ const Slider = ({slides}) => {
     ))
   )}
 </Swiper>
-    {/* <div id="carousel" className="carousel">
-      <div className="carousel-inner">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`carousel-item ${
-              index === currentIndex ? "active" : ""
-            }`}
-          >
-            <div className="carousel-item_in">
-              <img 
-                data-speed="clamp(0.9)"
-                src={slide.image}
-                alt={`Slide ${index + 1}`}
-              />
-              <div className="carousel-caption">
-                <h1 className="main-title">{slide.title}</h1>
-                <span>Area: {slide.area}</span>
-                <div className="link">
-                  <a href={slide.link}>View Details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="arrowContainer">
-        <button className="carousel-control-prev" onClick={handlePrev}>
-          <div className="arrow-box">
-            <img src="/public/assets/bangalore/images/icon/long-arrow-r.png" alt="Previous" />
-          </div>
-        </button>
-        <button className="carousel-control-next" onClick={handleNext}>
-          <div className="arrow-box">
-            <img src="/public/assets/bangalore/images/icon/long-arrow-l.png" alt="Next" />
-          </div>
-        </button>
-      </div>
-    </div> */}
+<Lightbox
+        index={index} // Current index
+        slides={slides.map(slide => ({ src: slide.src }))} // Map slides to Lightbox format
+        open={index >= 0} // Open Lightbox when an image is clicked
+        close={() => setIndex(-1)} // Close Lightbox
+        plugins={[Fullscreen, Zoom]} // Add Fullscreen and Zoom plugins
+      />
     </>
   );
 };
