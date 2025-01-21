@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CustomCard from "../Card";
 import { Button, Container } from "react-bootstrap";
 import CustomModal from "../../../common/Modal";
+import * as CONFIG from "../../../config/config";
 
 const Walkthrough = ({data})=>{
   const {src, title, desc } = data;
@@ -40,7 +41,7 @@ const Walkthrough = ({data})=>{
  
 
       <button onClick={handleRefresh} className="Close_video">
-        <img src="/public/assets/images/icons/close.png" alt="close icon" />
+        <img src={`${CONFIG.IMAGE_URL}icons/close.png`} alt="close icon" />
         <span>Close</span>
       </button>
       </div>
