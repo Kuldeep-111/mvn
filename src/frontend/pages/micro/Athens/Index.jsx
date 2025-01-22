@@ -77,7 +77,7 @@ export const AthensData = {
       },
       data: [
         {
-          name: "Kids Play Area",
+          name: "Kids' Play Area",
           imgSrc: {
             desktop: "kids.jpg",
             mobile: "kidsSm.jpg",
