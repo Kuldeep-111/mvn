@@ -52,37 +52,22 @@ const MicroHeader = ({ scrollToSection }) => {
     }
 
     const handleScroll = () => {
-      
-      if (window.scrollY > navbarScroll){
-        setScrolled(true)
-      }else{
-        setScrolled(false);
+      if(navbarScroll){
+        if (window.scrollY > navbarScroll){
+          setScrolled(true)
+        }else{
+          setScrolled(false);
+        }
       }
-      // if(!isMobile){
-      //   if (window.scrollY > 12000) {
-      //     setScrolled(true);
-      //   }else{
-      //     setScrolled(false);
-      //   }
-      // }else{
-      //   if (window.scrollY > 9000) {
-      //     setScrolled(true);
-      //   }else{
-      //     setScrolled(false);
-      //   }
-      // }
       
-      // if (window.scrollY > 50) {
-      //   setScrolled(true);
-      // } else {
-      //   setScrolled(false);
-      // }
+      
+      
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isMobile]);
+  }, [isMobile, navbarScroll]);
 
   useEffect(() => {
     // logo animation
@@ -204,6 +189,17 @@ const MicroHeader = ({ scrollToSection }) => {
                                   Overview
                                 </a>
                               </li>
+                              <li>
+                                <a
+                                  
+                                  className="new-launch"
+                                  onClick={() => {scrollToSection('Elegance');toggleMenu("close");}}
+                                >
+                                  Elegance
+                                </a>
+                              </li>
+                              
+
 
                               <li>
                                 <a
@@ -213,7 +209,14 @@ const MicroHeader = ({ scrollToSection }) => {
                                 The Living Room
                                 </a>
                               </li>
-
+                              <li>
+                                <a
+                                  className="new-launch"
+                                  onClick={() => {scrollToSection("MasterBedroom");toggleMenu("close");}}
+                                >
+                                MasterBedroom 
+                                </a>
+                              </li>
                               <li>
                                 <a
                                   className="new-launch"
@@ -259,6 +262,7 @@ const MicroHeader = ({ scrollToSection }) => {
                                 </a>
                               </li>
 
+                      
 
                               <li>
                                 <a
@@ -278,14 +282,6 @@ const MicroHeader = ({ scrollToSection }) => {
                                </a>
                               </li>
 
-                              <li>
-                                <a
-                                  className="new-launch"
-                                  onClick={() => {scrollToSection("MicroFloorPlan");toggleMenu("close");}}
-                                >
-                                  Floor Plans
-                                </a>
-                              </li>
 
                               <li>
                                 <a
@@ -296,22 +292,21 @@ const MicroHeader = ({ scrollToSection }) => {
                                 </a>
                               </li>
 
-                              <li>
-                                <a
-                                 className="new-launch"
-                                 onClick={() => {scrollToSection("MVNMALL");toggleMenu("close");}}
-                               >
-                                MVN Mall
-                               </a>
-                              </li>
+                       
 
-                              <li>
+                              {/* <li>
                                 <a
                                   className="new-launch"
-                                  onClick={() => {scrollToSection("NoPolutionZone");toggleMenu("close");}}
+                                  onClick={() => {scrollToSection("Enuqiry");toggleMenu("close");}}
                                 >
-                                  Connections MVN Mall
+                                  Contact
                                 </a>
+                              </li> */}
+
+                              <li>
+                                <NavLink to={import.meta.env.VITE_APP_URL + 'contact-us'} onClick={() => toggleMenu("close")}>
+                                Contact Us
+                                </NavLink>
                               </li>
 
                             </ul>
@@ -348,7 +343,7 @@ const MicroHeader = ({ scrollToSection }) => {
                           <div className="left">
                 
 
-                          <h4>Gurugram</h4>
+                          <h4 className="pt-0">Gurugram</h4>
                           <ul>
                             <li className="new_launch">
                               <NavLink to="https://mvnmall.com/" target="_blank" onClick={() => toggleMenu("close")}>
@@ -361,12 +356,6 @@ const MicroHeader = ({ scrollToSection }) => {
                           <ul>
                             <li>
                               <NavLink to="https://www.mvnaeroone.com/" target="_blank" onClick={() => toggleMenu("close")}>MVN</NavLink>
-                            </li>
-                            <li>
-                             
-                            <NavLink to={import.meta.env.VITE_APP_URL + 'aeroone-bangalore1'} onClick={() => toggleMenu("close")}>
-                                     MVN Aero One
-                                    </NavLink>
                             </li>
                           </ul>
 
@@ -417,11 +406,11 @@ const MicroHeader = ({ scrollToSection }) => {
                                     Career
                                     </NavLink>
                                   </li>
-                                  <li>
+                                  {/* <li>
                                     <NavLink to={import.meta.env.VITE_APP_URL + 'contact-us'} onClick={() => toggleMenu("close")}>
                                     Contact Us
                                     </NavLink>
-                                  </li>
+                                  </li> */}
                                 </>
                               ) : null}
                             </ul>
@@ -449,11 +438,11 @@ const MicroHeader = ({ scrollToSection }) => {
                               Career
                               </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                               <NavLink to={import.meta.env.VITE_APP_URL + 'contact-us'} onClick={() => toggleMenu("close")}>
                               Contact Us
                               </NavLink>
-                            </li>
+                            </li> */}
                             </ul>
                           </div>
                         </div>
@@ -462,7 +451,7 @@ const MicroHeader = ({ scrollToSection }) => {
                       <div className="top-area">
                         
                         <div className="inner-logo d-none d-md-block">
-                          <p><span>Office:</span> MVN Group, 2nd Floor, Above McDonald's, Jansons Mall, Downtown Park II, Menakunte, Sadahalli Gate, Bangalore - 562157</p>
+                          <p><span>Office:</span> MVN AERO ONE, C/o Awfis, 7th Floor, Gate No. 3 &4 Ambience Mall, Ambience Island, NH-8, DLF Phase-3, Sector-24, Gurugram</p>
                           <p><span>Talk:</span> +91 79960 00196</p>
                         </div>
 
@@ -516,7 +505,7 @@ const MicroHeader = ({ scrollToSection }) => {
 
 
                 <div className="closebtn-area d-none d-md-grid" onClick={() => toggleMenu("close")}>
-                  <a href="javascript:void(0)" className="closebtn"> <img src={CloseBtnimg} alt="mvn close icon"  className="img-fluid close-img"/>  Close</a>
+                  <a href="javascript:void(0)" className="closebtn" onClick="closeNav()"> <img src={CloseBtnimg} alt="mvn close icon"  className="img-fluid close-img"/>  Close</a>
                 </div>
               </div>
             </div>

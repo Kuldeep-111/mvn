@@ -228,24 +228,28 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
         <div id="smooth-content">
           
 
-          <div ref={(el) => (sectionRefs.current.microOverview = el)}>
+          {/* <div ref={(el) => (sectionRefs.current.microOverview = el)}> */}
             <MicroHero data={data} onLoadComplete={() => setHeroLoaded(true)} />
-          </div> 
+          {/* </div>  */}
 
           {/* Render other components only after Hero Section is loaded */}
-
+          <div ref={(el) => (sectionRefs.current.microOverview = el)}>
           <MicroOverview data={data} /> {/*no isssue*/}
+          </div> 
+          
+          <div ref={(el) => (sectionRefs.current.Elegance = el)}>
           <BangaloreLargeElevation/>
+          </div> 
         
-          <div>
+          <div ref={(el) => (sectionRefs.current.LIVINGROOM = el)}>
             <LivingRoomVideoGurugram
               data={data}
               onLoadComplete={() => setLivingRoomLoaded(true)}
               isMobile={isMobile}
             />
           </div>
-          <div>
-            <BangaloreMasterBedroom
+          <div  ref={(el) => (sectionRefs.current.MasterBedroom = el)}>
+            <BangaloreMasterBedroom 
               data={data}
               isMobile={isMobile}
               onLoadComplete={() =>
