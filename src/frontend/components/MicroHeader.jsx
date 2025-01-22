@@ -178,7 +178,7 @@ const MicroHeader = ({ scrollToSection }) => {
                                 </NavLink>
                               </li>
                               </ul>
-                            <h4>MVN AeroOne, Gurugram</h4>
+                            <h4>MVN AeroOne, Bangalore</h4>
                             <ul>
                               <li>
                                 <a
@@ -187,15 +187,6 @@ const MicroHeader = ({ scrollToSection }) => {
                                   onClick={() => {scrollToSection('microOverview');toggleMenu("close");}}
                                 >
                                   Overview
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  
-                                  className="new-launch"
-                                  onClick={() => {scrollToSection('Elegance');toggleMenu("close");}}
-                                >
-                                  Elegance
                                 </a>
                               </li>
                               
@@ -504,9 +495,27 @@ const MicroHeader = ({ scrollToSection }) => {
                 </div>
 
 
-                <div className="closebtn-area d-none d-md-grid" onClick={() => toggleMenu("close")}>
-                  <a href="javascript:void(0)" className="closebtn" onClick="closeNav()"> <img src={CloseBtnimg} alt="mvn close icon"  className="img-fluid close-img"/>  Close</a>
-                </div>
+                <div
+  className="closebtn-area d-none d-md-grid"
+  onClick={() => toggleMenu("close")}
+>
+  <a
+    href="#"
+    className="closebtn"
+    onClick={(e) => {
+      e.stopPropagation(); // Prevent the parent div's onClick from firing
+      toggleMenu("close");
+    }}
+  >
+    <img
+      src={CloseBtnimg}
+      alt="mvn close icon"
+      className="img-fluid close-img"
+    />
+    Close
+  </a>
+</div>
+
               </div>
             </div>
           </div>

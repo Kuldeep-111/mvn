@@ -186,7 +186,7 @@ export const dataBanglore = {
       {
         asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/4.jpg`,
         watermark: "right",
-        title: "Kids Room",
+        title: "KIDS' ROOM",
       },
       {
         asset: `${CONFIG.IMAGE_URL_BANGALORE}/images/apartments/5.jpg`,

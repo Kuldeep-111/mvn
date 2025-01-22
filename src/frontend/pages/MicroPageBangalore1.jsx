@@ -237,9 +237,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
           <MicroOverview data={data} /> {/*no isssue*/}
           </div> 
           
-          <div ref={(el) => (sectionRefs.current.Elegance = el)}>
           <BangaloreLargeElevation/>
-          </div> 
         
           <div ref={(el) => (sectionRefs.current.LIVINGROOM = el)}>
             <LivingRoomVideoGurugram
