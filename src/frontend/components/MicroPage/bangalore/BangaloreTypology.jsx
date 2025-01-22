@@ -6,7 +6,7 @@ import "./BangaloreTypology.css";
 import CustomSlider from "./CustomSlider";
 
 import * as CONFIG from "../../../../config/config";
-const BangaloreTypology = ({ data }) => {
+const BangaloreTypology = ({ data,onLoadComplete }) => {
   const [slides1, setSlides1] = useState([]);
   const [slides2, setSlides2] = useState([]);
   const [slides3, setSlides3] = useState([]);

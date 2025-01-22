@@ -90,7 +90,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   }, [heroLoaded]);
 
   useEffect(() => {
-    if (newLoadingCount >= 100 && heroLoaded  && livingRoomLoaded && masterBedroomLoaded && apartmentLoaded  ) {
+    if (newLoadingCount >= 100 && heroLoaded  && livingRoomLoaded && masterBedroomLoaded && apartmentLoaded && amenitiesLoaded && landscapeLoaded && elevationLoaded) {
       const timer = setTimeout(() => {
         setNewLoadingCount(101);
         setIsPageLoaded(true); // Mark page as loaded
@@ -101,11 +101,11 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   }, [newLoadingCount]);
 
 
-  // console.log(landscapeLoaded,"landscapeLoaded");
+  console.log(elevationLoaded,"elevationLoaded");
   return (
     <>
     {/*    */}
-      {(!heroLoaded || !livingRoomLoaded || !masterBedroomLoaded || !apartmentLoaded ) && (
+      {(!heroLoaded || !livingRoomLoaded || !masterBedroomLoaded || !apartmentLoaded || !amenitiesLoaded || !landscapeLoaded || !elevationLoaded) && (
         <>
           <InitialLoading
             fast="false"

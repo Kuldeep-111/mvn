@@ -35,7 +35,7 @@ const amenityData = [
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Amenities({ amenitiesData }) {
+export default function Amenities({ amenitiesData,onLoadComplete }) {
   const {content , data ,bangalore_amenities} = amenitiesData;
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const sectionsRef = useRef([]);
@@ -107,22 +107,36 @@ export default function Amenities({ amenitiesData }) {
 
   // Refresh ScrollTrigger after images are loaded
   useEffect(() => {
-    const images = document.querySelectorAll("img");
-    let loadedCount = 0;
-
-    images.forEach((img) => {
-      if (img.complete) {
-        loadedCount++;
-      } else {
-        img.addEventListener("load", () => {
-          loadedCount++;
-          if (loadedCount === images.length) {
-            ScrollTrigger.refresh();
+    const images = Array.from(document.querySelectorAll("img")); // Get all images in the DOM
+  
+    // Function to load an individual image and return a Promise
+    const loadImage = (img) => {
+      return new Promise((resolve, reject) => {
+        if (img.complete) {
+          if (img.naturalWidth > 0) {
+            resolve(); // Image successfully loaded
+          } else {
+            reject(new Error(`Image failed to load: ${img.src}`)); // Image is broken
           }
-        });
-      }
-    });
+        } else {
+          img.addEventListener("load", resolve); // Resolve when load event fires
+          img.addEventListener("error", () => reject(new Error(`Image failed to load: ${img.src}`))); // Reject on error
+        }
+      });
+    };
+  
+    // Wait for all images to load
+    Promise.all(images.map(loadImage))
+      .then(() => {
+        ScrollTrigger.refresh(); // Refresh ScrollTrigger after images are loaded
+        onLoadComplete(); // Notify that loading is complete
+      })
+      .catch((error) => {
+        console.error("Some images failed to load:", error);
+        // Optionally, handle failed image loading (e.g., show a fallback UI)
+      });
   }, []);
+  
 
   const renderMobileView = () => (
     <div className="amenities_section main_am">

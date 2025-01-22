@@ -11,7 +11,6 @@ import "yet-another-react-lightbox/styles.css";
 
 const Slider = ({slides}) => {
   const [index, setIndex] = useState(-1);
-  const [lightboxImage, setLightboxImage] = useState(null);
   return (
     <>
     <Swiper
@@ -36,7 +35,7 @@ const Slider = ({slides}) => {
                   data-speed="clamp(0.9)"
                   src={slide.src}
                   alt={`Slide ${index + 1}`}
-                  onClick={() => setLightboxImage(slide.src)}
+                  onClick={() => setIndex(index)}
                 />
                 <div className="carousel-caption">
                   <h1 className="main-title">{slide.title}</h1>
@@ -54,17 +53,29 @@ const Slider = ({slides}) => {
   )}
 </Swiper>
 <Lightbox
-  slides={lightboxImage ? [{ src: lightboxImage }] : []} // Show only the clicked image
-  open={!!lightboxImage} // Open Lightbox when an image is clicked
-  close={() => setLightboxImage(null)} // Close Lightbox
+  index={index} // Current index
+  slides={slides.map(slide => ({
+    src: slide.src,    // The image source
+    title: slide.title, // The title of the image
+    area: slide.area,   // The area of the image
+  }))} // Map slides to Lightbox format with additional data
+  open={index >= 0} // Open Lightbox when an image is clicked
+  close={() => setIndex(-1)} // Close Lightbox
   plugins={[Fullscreen, Zoom]} // Add Fullscreen and Zoom plugins
-  carousel={{
-    finite: true, // Prevent infinite looping of navigation
-    buttons: false, // Completely disable navigation buttons
-    swipe: false,   // Disable swipe gestures
-    keyboard: false, // Disable keyboard navigation
+  render={{
+    slide: ({ slide }) => (
+      <div className="Typologies_Modal">
+        <div className="Typologies_details">
+        <div className="name">{slide.title}</div> {/* Display title */}
+        <div className="area">{slide.area}</div> {/* Display area */}
+        </div>
+        {/* Optional: You can add the image explicitly here if you want */}
+        <img src={slide.src} alt="Slide" className='SlideImg'/>
+      </div>
+    ),
   }}
 />
+
     </>
   );
 };
