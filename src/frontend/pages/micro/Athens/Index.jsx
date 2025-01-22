@@ -149,19 +149,19 @@ export const AthensData = {
           tower_c: [
           {
             title: "Lower Level Plan",
-            area: "3419 sqft",
+            area: "3419 sq.ft.",
             link: "#",
             src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/1.png`
           },
           {
             title: "Upper Level Plan",
-            area: "3419 sqft",
+            area: "3419 sq.ft.",
             link: "#",
             src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/2.png`
           },
           {
             title: "Upper Level Plan",
-            area: "3375 sqft",
+            area: "3375 sq.ft.",
             link: "#",
             src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerc/3.png`
           },
@@ -169,19 +169,19 @@ export const AthensData = {
         tower_d: [
         {
           title: "Lower Level Plan",
-          area: "3419 sqft",
+          area: "3419 sq.ft.",
           link: "#",
           src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/1.png`
         },
         {
           title: "Upper Level Plan",
-          area: "3419 sqft",
+          area: "3419 sq.ft.",
           link: "#",
           src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/2.png`
         },
         {
           title: "Upper Level Plan",
-          area: "3375 sqft",
+          area: "3375 sq.ft.",
           link: "#",
           src: `${CONFIG.IMAGE_URL_Athens}floor-plan/towerd/3.png`
         },
@@ -321,7 +321,7 @@ export const AthensData = {
   },
   locationAdvantage: {
     isshow: true,
-    title: "Location Advantage", 
+    title: "Location Advantages", 
     desc:"Strategically nestled in Faridabad, MVN Athens ensures connectivity while surrounding you with urban conveniences and serene charm.",
     mapIMG: {
       desktop: `${CONFIG.IMAGE_URL_Athens}location-map.jpg`,
