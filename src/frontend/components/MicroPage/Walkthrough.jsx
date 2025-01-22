@@ -44,8 +44,8 @@ const Walkthrough = ({ data }) => {
   const handleStateChange = (event) => {
     if (event.data === window.YT.PlayerState.PLAYING) {
       setIsVideoPlaying(true); // Mark video as playing
-    } else if (event.data === window.YT.PlayerState.PAUSED || event.data === window.YT.PlayerState.ENDED) {
-      // setIsVideoPlaying(false); // Mark video as not playing
+    } else if ( event.data === window.YT.PlayerState.ENDED) {
+      setIsVideoPlaying(false); // Mark video as not playing
     }
   };
 
@@ -56,6 +56,7 @@ const Walkthrough = ({ data }) => {
     // Reset videoSrc after 100ms to force iframe reload
     setTimeout(() => {
       setVideoSrc(src);
+      setIsVideoPlaying(false);
     }, 10);
   };
 
