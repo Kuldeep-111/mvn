@@ -11,6 +11,7 @@ import "yet-another-react-lightbox/styles.css";
 
 const Slider = ({slides}) => {
   const [index, setIndex] = useState(-1);
+  const [lightboxImage, setLightboxImage] = useState(null);
   return (
     <>
     <Swiper
@@ -35,7 +36,7 @@ const Slider = ({slides}) => {
                   data-speed="clamp(0.9)"
                   src={slide.src}
                   alt={`Slide ${index + 1}`}
-                  onClick={() => setIndex(index)}
+                  onClick={() => setLightboxImage(slide.src)}
                 />
                 <div className="carousel-caption">
                   <h1 className="main-title">{slide.title}</h1>
@@ -53,12 +54,17 @@ const Slider = ({slides}) => {
   )}
 </Swiper>
 <Lightbox
-        index={index} // Current index
-        slides={slides.map(slide => ({ src: slide.src }))} // Map slides to Lightbox format
-        open={index >= 0} // Open Lightbox when an image is clicked
-        close={() => setIndex(-1)} // Close Lightbox
-        plugins={[Fullscreen, Zoom]} // Add Fullscreen and Zoom plugins
-      />
+  slides={lightboxImage ? [{ src: lightboxImage }] : []} // Show only the clicked image
+  open={!!lightboxImage} // Open Lightbox when an image is clicked
+  close={() => setLightboxImage(null)} // Close Lightbox
+  plugins={[Fullscreen, Zoom]} // Add Fullscreen and Zoom plugins
+  carousel={{
+    finite: true, // Prevent infinite looping of navigation
+    buttons: false, // Completely disable navigation buttons
+    swipe: false,   // Disable swipe gestures
+    keyboard: false, // Disable keyboard navigation
+  }}
+/>
     </>
   );
 };

@@ -15,31 +15,8 @@ import CustomCard from '../Card';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Original landscape data array
-const landscapeData = [
-  // {
-  //   asset: CONFIG.IMAGE_URL + 'renders/landscape/4.webp',
-  //   watermark: 'left'
-  // },
-  {
-    asset: CONFIG.IMAGE_URL + 'renders/landscape/1.webp',
-    watermark: 'left',
-    title:'Yoga Deck',
-  },
-  {
-    asset: CONFIG.IMAGE_URL + 'renders/landscape/2.webp',
-    watermark: 'right',
-    title:'Swimming Pool',
-  },
-  {
-    asset: CONFIG.IMAGE_URL + 'renders/landscape/3.webp',
-    watermark: 'right',
-    title:'Pergola View',
-  }
-];
-
 // Component using landscapeData
-export default function MicroLandscape({ landScapeData, title, subTitle, mobContent = 12 }) {
+export default function MicroLandscape({ onLoadComplete,landScapeData, title, subTitle, mobContent = 12 }) {
   const data = [...landScapeData.images];
   const contents = landScapeData.content;
   const sectionsRef = useRef([]);
@@ -100,6 +77,7 @@ export default function MicroLandscape({ landScapeData, title, subTitle, mobCont
       setTimeout(() => {
         initializeAnimations();
         // ScrollTrigger.refresh();
+        setLandscapeLoaded();
       }, 300);
     }
 

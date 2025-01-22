@@ -49,6 +49,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   const [elevationLoaded,setElevationLoaded] = useState(false)
   const [typologyLoaded, setTypologyLoaded] = useState(false);
   const [landscapeLoaded, setLandscapeLoaded] = useState(false);
+  const [walkthrough, setWalkthrough] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const smootherRef = useRef(null);
   const sectionRefs = useRef({});
@@ -89,7 +90,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
   }, [heroLoaded]);
 
   useEffect(() => {
-    if (newLoadingCount >= 100 && heroLoaded  && livingRoomLoaded && masterBedroomLoaded && apartmentLoaded) {
+    if (newLoadingCount >= 100 && heroLoaded  && livingRoomLoaded && masterBedroomLoaded && apartmentLoaded  ) {
       const timer = setTimeout(() => {
         setNewLoadingCount(101);
         setIsPageLoaded(true); // Mark page as loaded
@@ -99,10 +100,12 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
     }
   }, [newLoadingCount]);
 
+
+  // console.log(landscapeLoaded,"landscapeLoaded");
   return (
     <>
     {/*    */}
-      {(!heroLoaded || !livingRoomLoaded || !masterBedroomLoaded || !apartmentLoaded) && (
+      {(!heroLoaded || !livingRoomLoaded || !masterBedroomLoaded || !apartmentLoaded ) && (
         <>
           <InitialLoading
             fast="false"
@@ -277,6 +280,7 @@ const MicroPageBangalore1 = ({ data, loadingCount, setLoadingCount }) => {
           >
             <MicroLandscape 
             landScapeData={data.landscape}
+            onLoadComplete={() => setLandscapeLoaded(true)}
               />
           </div>
 
