@@ -12,14 +12,10 @@ const Walkthrough = ({ data }) => {
   const playerRef = useRef(null);
 
   useEffect(() => {
-    // Load the YouTube IFrame Player API
-    const tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // Initialize YouTube Player when API is ready
-    window.onYouTubeIframeAPIReady = () => {
+    const initializePlayer = () => {
+      if (playerRef.current) {
+        playerRef.current.destroy(); // Clean up the old player
+      }
       playerRef.current = new window.YT.Player("youtube-player", {
         videoId: getVideoIdFromUrl(videoSrc),
         events: {
@@ -27,14 +23,29 @@ const Walkthrough = ({ data }) => {
         },
       });
     };
-
+  
+    // Load the YouTube IFrame Player API if not already loaded
+    if (!window.YT) {
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+      // Wait for API to be ready
+      window.onYouTubeIframeAPIReady = initializePlayer;
+    } else {
+      initializePlayer();
+    }
+  
     return () => {
-      // Cleanup API if the component unmounts
+      // Cleanup YouTube Player instance
       if (playerRef.current) {
         playerRef.current.destroy();
+        playerRef.current = null;
       }
     };
-  }, [videoSrc]);
+  }, [videoSrc]); // Reinitialize player when videoSrc changes
+  
 
   const getVideoIdFromUrl = (url) => {
     const match = url.match(/(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
