@@ -80,12 +80,17 @@ color: #131313;text-decoration: none;font-family: "Tinos-Regular";font-size: 18p
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Typologies_Modal .Typologies_details{
     position: absolute;
     top: 10px;
     left: 10px;
+}
+.Typologies_Modal .Typologies_details div{
+    text-align: start;
 }
 .Typologies_Modal .SlideImg{
     max-height: 100%;
@@ -106,6 +111,10 @@ color: #131313;text-decoration: none;font-family: "Tinos-Regular";font-size: 18p
         flex-direction: column;
     }
     .typology_section .carousel-inner .carousel-item img{
+        width: 100%;
+    }
+    .Typologies_Modal .SlideImg{
+        height: auto;
         width: 100%;
     }
   }
