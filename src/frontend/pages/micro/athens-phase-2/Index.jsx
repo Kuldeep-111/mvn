@@ -6,7 +6,7 @@ import MicroPageGurgaonPhase2 from "../../MicroPageGurgaonPhase2";
 export const AthensPhase2Data = {
   header:{
     // classData:"bg_black",
-    title:'MVN Athens Gurgaon Phase 2',
+    title:'Athens Gurgaon Phase 2',
     sidebar_section:[
       {title:'Overview',link:'microOverview'},
       {title:'MVN ID Brochure',link:'downloadBrochure'},
