@@ -3,8 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 const Slider = ({ slides }) => {
+  const [index, setIndex] = useState(-1);
+
   return (
     <>
       <Swiper
@@ -33,6 +39,7 @@ const Slider = ({ slides }) => {
                         // data-speed="clamp(0.9)"
                         src={slide.src}
                         alt={`Slide ${index + 1}`}
+                        onClick={() => setIndex(index)}
                       />
                       <div className="carousel-caption">
                         <h1 className="main-title">{slide.title}</h1>
@@ -49,6 +56,34 @@ const Slider = ({ slides }) => {
           ))
         )}
       </Swiper>
+      <Lightbox
+        index={index} // Current index
+        slides={slides.map((slide) => ({
+          src: slide.src, // The image source
+          title: slide.title, // The title of the image
+          area: slide.area, // The area of the image
+        }))} // Map slides to Lightbox format with additional data
+        open={index >= 0} // Open Lightbox when an image is clicked
+        close={() => setIndex(-1)} // Close Lightbox
+        plugins={[Fullscreen, Zoom]} // Add Fullscreen and Zoom plugins
+        render={{
+          slide: ({ slide }) => (
+            <div className="Typologies_Modal">
+              <div className="Typologies_details">
+                <div className="name">{slide.title}</div> {/* Display title */}
+                <div className="area">{slide.area}</div> {/* Display area */}
+              </div>
+              {/* Optional: You can add the image explicitly here if you want */}
+              <img
+                src={slide.src}
+                alt="Slide"
+                style={{ width: "100%", height: "auto" }}
+                className="SlideImg"
+              />
+            </div>
+          ),
+        }}
+      />
       {/* <div id="carousel" className="carousel">
       <div className="carousel-inner">
         {slides.map((slide, index) => (
