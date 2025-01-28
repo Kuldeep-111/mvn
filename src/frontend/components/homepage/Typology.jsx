@@ -86,7 +86,9 @@ const Typology = ({ onLoadComplete }) => {
           (self.progress - segmentIndex / segments.length) * segments.length;
         const frameIndex = Math.min(
           segment.startFrame +
-            Math.floor(segmentProgress * (segment.endFrame - segment.startFrame)),
+            Math.floor(
+              segmentProgress * (segment.endFrame - segment.startFrame)
+            ),
           totalFrames - 1
         );
 
@@ -129,11 +131,16 @@ const Typology = ({ onLoadComplete }) => {
 
   return (
     <>
-      <section ref={containerRef} className="section typology_section">
-        <div className="heading_div mb_60 mb_sm_30" >
+      <section
+        ref={containerRef}
+        className="section typology_section "
+        id="pt-0"
+        style={{ paddingTop: "100px !important" }}
+      >
+        <div className="heading_div mb_60 mb_sm_30">
           <h4 className="title title_style1 text-center">Typologies</h4>
         </div>
-        
+
         {/* <div className="sec_title text-center color style1">
           <h4 className="title">Typologies</h4>
         </div> */}
@@ -151,7 +158,7 @@ const Typology = ({ onLoadComplete }) => {
             />
           ))}
 
-<div className="typology_arrow">
+          <div className="typology_arrow">
             <div className="line"></div>
           </div>
         </div>
@@ -175,9 +182,9 @@ const Typology = ({ onLoadComplete }) => {
               <h1>Penthouse</h1>
               <p>
                 Elevate your lifestyle to new heights with these extraordinary
-                duplex residences, where two levels of unmatched luxury unfold before
-                you. With impeccable attention to detail and a focus on privacy
-                and exclusivity, these residences embody the pinnacle of
+                duplex residences, where two levels of unmatched luxury unfold
+                before you. With impeccable attention to detail and a focus on
+                privacy and exclusivity, these residences embody the pinnacle of
                 sophisticated living, where only the most discerning will
                 reside.
               </p>

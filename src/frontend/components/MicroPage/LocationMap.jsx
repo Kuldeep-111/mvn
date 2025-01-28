@@ -1,28 +1,25 @@
-import React, { useEffect, useRef, useState } from "react"
-import { Container } from "react-bootstrap"
-import SecTitle from "../../../common/SecTitle/Index"
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import Modal from 'react-bootstrap/Modal';
-
+import React, { useEffect, useRef, useState } from "react";
+import { Container } from "react-bootstrap";
+import SecTitle from "../../../common/SecTitle/Index";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Modal from "react-bootstrap/Modal";
 
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
-import * as CONFIG from '../../../config/config'
+import * as CONFIG from "../../../config/config";
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 import "yet-another-react-lightbox/styles.css";
 
-import location_map_sm from '../../assets/images/location-advantage/location_map_sm.webp'
+import location_map_sm from "../../assets/images/location-advantage/location_map_sm.webp";
 import Button from "../../../common/Button/Button";
 import CustomCard from "../Card";
 import BangaloreLocationSlider from "./bangalore/BangaloreLocationSlider";
 
 gsap.registerPlugin(ScrollTrigger);
-
-
 
 // const locationData = [
 //   {
@@ -51,7 +48,7 @@ gsap.registerPlugin(ScrollTrigger);
 //   },
 // ]
 
-const MicroLocationMap = ({data})=>{
+const MicroLocationMap = ({ data }) => {
   const titleRef = useRef();
   const typoRefs = useRef([]);
   const priceRefs = useRef([]);
@@ -59,78 +56,82 @@ const MicroLocationMap = ({data})=>{
   const [isLocationMapOpen, setIsLocationMapOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
+  const locationMapImg = [
+    { src: data.mapIMG.desktop, asset: data.mapIMG.desktop },
+  ];
 
-  const locationMapImg = [{src: data.mapIMG.desktop, asset:data.mapIMG.desktop}]
-  
   const handleClose = () => setShowModal(false);
-
 
   const handleShow = () => setShowModal(true);
 
   // for animation
 
-  useEffect(()=>{
+  useEffect(() => {
     gsap.from(titleRef.current, {
-      y: 50,  
+      y: 50,
       opacity: 0,
-      duration: 1, 
+      duration: 1,
 
-      scrollTrigger:{
+      scrollTrigger: {
         trigger: titleRef.current,
         start: "top 95%",
-      }
-    })
-
+      },
+    });
 
     typoRefs.current.forEach((singleRef, index) => {
       if (singleRef) {
         gsap.from(singleRef, {
-          y: 20,  
+          y: 20,
           opacity: 0,
-          duration: 0.5,  
+          duration: 0.5,
 
           scrollTrigger: {
             trigger: singleRef,
             start: "top 95%", // When the top of the element reaches 80% of the viewport
-          }
+          },
         });
       }
-    })
+    });
 
     priceRefs.current.forEach((singleRef, index) => {
       if (singleRef) {
         gsap.from(singleRef, {
-          y: 20,  
+          y: 20,
           opacity: 0,
-          duration: 0.5,  
+          duration: 0.5,
 
           scrollTrigger: {
             trigger: singleRef,
             start: "top 95%", // When the top of the element reaches 80% of the viewport
-          }
+          },
         });
       }
-    })
+    });
 
     sizeRefs.current.forEach((singleRef, index) => {
       if (singleRef) {
         gsap.from(singleRef, {
-          y: 10,  
+          y: 10,
           opacity: 0,
-          duration: 0.5,  
+          duration: 0.5,
 
           scrollTrigger: {
             trigger: singleRef,
             start: "top 95%", // When the top of the element reaches 80% of the viewport
-          }
+          },
         });
       }
-    })
-  }, [])
+    });
+  }, []);
 
-console.log(data,"data.secondTitle secondTitle")
-  return(
-    <section className="section location_map_section">
+  console.log(data, "data.secondTitle secondTitle");
+  return (
+    <section
+      className="section location_map_section pt-0"
+      // style={{
+      //   paddingTop: "0px !important",
+      // }}
+    >
       <Container>
         <div className="heading_div mb_60 mb_sm_30">
           <h4 className="title title_style1 text-center">Location Map</h4>
@@ -142,20 +143,31 @@ console.log(data,"data.secondTitle secondTitle")
       </Container>
 
       <div className="locationMapContent">
-
         <div className="row justify-content-center">
           <div className="col-sm-9">
             <div className="thumbnail">
-               {data.youtube &&
-              <button className="location_btn"  onClick={handleShow}>
-                <img src={CONFIG.IMAGE_URL + 'icons/yt_color.png'} alt="youtube icon" className="img-fluid yt_icon" />
-                Location Video
-              </button>}
+              {data.youtube && (
+                <button className="location_btn" onClick={handleShow}>
+                  <img
+                    src={CONFIG.IMAGE_URL + "icons/yt_color.png"}
+                    alt="youtube icon"
+                    className="img-fluid yt_icon"
+                  />
+                  Location Video
+                </button>
+              )}
 
-              
-              <div onClick={()=>setIsLocationMapOpen(true)}>
-                <img src={data.mapIMG.desktop} alt="mvn-master-plan" className="img-fluid d-none d-md-block"  />
-                <img src={data.mapIMG.mobile} alt="mvn-master-plan" className="img-fluid d-md-none"  />
+              <div onClick={() => setIsLocationMapOpen(true)}>
+                <img
+                  src={data.mapIMG.desktop}
+                  alt="mvn-master-plan"
+                  className="img-fluid d-none d-md-block"
+                />
+                <img
+                  src={data.mapIMG.mobile}
+                  alt="mvn-master-plan"
+                  className="img-fluid d-md-none"
+                />
               </div>
             </div>
           </div>
@@ -163,52 +175,62 @@ console.log(data,"data.secondTitle secondTitle")
 
         <Container className="desktop_fluid_container">
           <h4 className="title style2">{data.title}</h4>
-          {data.locationData &&<ul className="location_points">
-            <span className="left_road"></span>
-            <span className="top_road"></span>
-            {data.locationData.map((item,index)=>(
-              <li key={index}>
-                <h3 className="distance">{item.distance}</h3>
-                <p>{item.title}</p>
-              </li>
-            ))}
-          </ul>}
-          
+          {data.locationData && (
+            <ul className="location_points">
+              <span className="left_road"></span>
+              <span className="top_road"></span>
+              {data.locationData.map((item, index) => (
+                <li key={index}>
+                  <h3 className="distance">{item.distance}</h3>
+                  <p>{item.title}</p>
+                </li>
+              ))}
+            </ul>
+          )}
         </Container>
       </div>
 
-      {data.bangaloreLocation && <BangaloreLocationSlider data={data}/>}
+      {data.bangaloreLocation && <BangaloreLocationSlider data={data} />}
       <Container>
-        <div className='about'>
+        <div className="about">
           <CustomCard
             className="px-0"
             title={data.secondTitle}
-            desc={data.desc} 
+            desc={data.desc}
           />
         </div>
       </Container>
 
-      <Lightbox 
+      <Lightbox
         open={isLocationMapOpen}
         close={() => setIsLocationMapOpen(false)}
-        slides={[{src:data.mapIMG.desktop}]}
+        slides={[{ src: data.mapIMG.desktop }]}
         plugins={[Zoom]}
         carousel={{
-          finite: locationMapImg.length <= 1,  // Prevent looping if there’s only one image
+          finite: locationMapImg.length <= 1, // Prevent looping if there’s only one image
         }}
         render={{
-        buttonNext: locationMapImg.length > 1 ? undefined : () => null,
-        buttonPrev: locationMapImg.length > 1 ? undefined : () => null,
-        slide: locationMapImg.length > 1 ? undefined : () => null, 
-      }} />
-
+          buttonNext: locationMapImg.length > 1 ? undefined : () => null,
+          buttonPrev: locationMapImg.length > 1 ? undefined : () => null,
+          slide: locationMapImg.length > 1 ? undefined : () => null,
+        }}
+      />
 
       <Modal className="location_modal" show={showModal} onHide={handleClose}>
-        <span type="button" class="close" onClick={handleClose}>×</span>
-        <iframe src="https://www.youtube.com/embed/p4ArtUtsj-A?si=VsbM3Dvdk969-OHv" title="MVN Location Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen=""></iframe>
+        <span type="button" class="close" onClick={handleClose}>
+          ×
+        </span>
+        <iframe
+          src="https://www.youtube.com/embed/p4ArtUtsj-A?si=VsbM3Dvdk969-OHv"
+          title="MVN Location Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowFullScreen=""
+        ></iframe>
       </Modal>
     </section>
-  )
-}
+  );
+};
 
-export default MicroLocationMap
+export default MicroLocationMap;

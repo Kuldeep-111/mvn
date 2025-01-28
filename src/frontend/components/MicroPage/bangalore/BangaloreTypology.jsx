@@ -8,12 +8,20 @@ const BangaloreTypology = ({ data }) => {
   const { desc, tabs, tabs_name } = data;
 
   return (
-    <section className="section typology_section">
+    <section
+      className="section typology_section "
+      id="pt-45"
+      style={{ paddingTop: "100px !important" }}
+    >
       <div className="heading_div mb_60 mb_sm_30">
         <h4 className="title title_style1 text-center">Typologies</h4>
       </div>
       <Container>
-        <Tabs defaultActiveKey={tabs_name[0]} id="typology-tabs" className="mb-3 pb-0">
+        <Tabs
+          defaultActiveKey={tabs_name[0]}
+          id="typology-tabs"
+          className="mb-3 pb-0"
+        >
           {Object.keys(tabs).map((key, index) => (
             <Tab eventKey={tabs_name[index]} title={tabs_name[index]} key={key}>
               <CustomSlider slides={tabs[key]} />
