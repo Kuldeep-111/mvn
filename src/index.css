@@ -4889,6 +4889,17 @@ footer {
   }
 }
 
+.zoomed_in_img {
+  height: auto;
+  width: 600px;
+}
+
+@media (max-width: 767px) {
+  .zoomed_in_img {
+    width: 100%;
+  }
+}
+
 #pt-45 {
   padding-top: 45px !important;
   padding-bottom: 50px !important;

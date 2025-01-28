@@ -4,6 +4,7 @@ import CustomCard from "../../Card";
 import CustomSlider from "./CustomSlider";
 import "./BangaloreTypology.css";
 
+
 const BangaloreTypology = ({ data }) => {
   const { desc, tabs, tabs_name } = data;
 

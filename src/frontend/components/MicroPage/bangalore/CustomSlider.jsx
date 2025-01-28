@@ -77,8 +77,7 @@ const Slider = ({ slides }) => {
               <img
                 src={slide.src}
                 alt="Slide"
-                style={{ width: "100%", height: "auto" }}
-                className="SlideImg"
+                className="SlideImg zoomed_in_img"
               />
             </div>
           ),
