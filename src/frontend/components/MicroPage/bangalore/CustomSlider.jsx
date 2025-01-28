@@ -39,6 +39,7 @@ const Slider = ({ slides }) => {
                         // data-speed="clamp(0.9)"
                         src={slide.src}
                         alt={`Slide ${index + 1}`}
+                        className="mb-2"
                         onClick={() => setIndex(index)}
                       />
                       <div className="carousel-caption">

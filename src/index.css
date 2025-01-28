@@ -4891,7 +4891,11 @@ footer {
 
 .zoomed_in_img {
   height: auto;
-  width: 600px;
+  width: 720px;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
 }
 
 @media (max-width: 767px) {
